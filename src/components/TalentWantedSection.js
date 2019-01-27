@@ -8,7 +8,7 @@ function TalentsItem({ positionTitle, description, style }) {
   return (
     <div className="talents-item" style={style}>
       <div className="talents-item-shell">
-        <h4>{positionTitle}</h4>
+        <h4>{`< ${positionTitle} >`}</h4>
         <p>{description}</p>
         <a href="/#" className="button no-background">
           More info <img alt='' src={ArrowRight} />

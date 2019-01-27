@@ -23,7 +23,7 @@ export class HowWeWorkSection extends Component {
                 </h4>
               </div>
 
-              <div classNam="content-info">
+              <div className="content-info">
                 <p className="lato-font">Software algorithms
                 <br /> promising open source technologies
                 <br /> robot electronics and HW
@@ -42,7 +42,7 @@ export class HowWeWorkSection extends Component {
                 </h4>
               </div>
 
-              <div classNam="content-info">
+              <div className="content-info">
                 <p className="lato-font"> Future playground <br /> Always learn new stuff </p>
               </div>
             </div>
@@ -58,7 +58,7 @@ export class HowWeWorkSection extends Component {
                 </h4>
               </div>
 
-              <div classNam="content-info">
+              <div className="content-info">
                 <p className="lato-font"> We can only accomplish the unusual <br /> with teams that work together <br />
                   We work, were it is good to work, <br /> in the lab, on field trips, at home </p>
               </div>

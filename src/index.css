@@ -41,7 +41,7 @@ ul { list-style-type: none; }
 }
 .section-home-shell { max-width: 960px; width: 100%; margin: 200px auto; }
 .section-home-shell-inner { width: 470px; display: flex; flex-direction: column; }
-.section-home-shell-inner p { margin-top: 0; width: 406px; }
+.section-home-shell-inner p { margin-top: 0; width: 410px; }
 .section-home-shell h1 { text-align: left; margin-bottom: 26px; }
 
 /* SECTION TALENTS WANTED */
@@ -84,7 +84,7 @@ ul { list-style-type: none; }
 .talents-item-shell.team img { width: 132px; height: 132px; }
 .talents-item-shell.team h4 { font-weight: 500; margin: 10px auto 0 auto; }
 .talents-item-shell.team p { margin: 0; font-size: 18px; }
-.talents-item.team { padding: 0; }
+.talents-item.team { padding: 30px 70px; }
 .talents-item-shell.team, .talents-item-shell.team p  { text-align: center; }
 
 /* SECTION CONTACT US */
