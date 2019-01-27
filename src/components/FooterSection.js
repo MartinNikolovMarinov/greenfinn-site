@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Logo from '../images/logo-horizontal.png';
@@ -14,7 +15,7 @@ export class FooterSection extends Component {
           <ul className="section-footer-list">
             <li className="section-footer-list-item">
               <img alt="" src={Logo} />
-              <a href="/#" className="button" onClick={this.props.openModal}>
+              <a className="button" onClick={this.props.openModal}>
                 Join Our Team
               </a>
             </li>

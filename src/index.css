@@ -202,14 +202,26 @@ ul { list-style-type: none; }
 }
 
 /* POP UP */
-.pop-up-shell-outer { background-color: white; padding: 50px 100px; width: 700px; height: 100%; border-radius: 5px; box-shadow: -1px 13px 20px 0 #f0f2f4; }
+.pop-up { width: 100%; height: 100%; }
+.pop-up-shell-outer { background-color: white; border-radius: 5px; box-shadow: -1px 13px 20px 0 #f0f2f4; height: auto; }
 .pop-up .pop-up-shell { display: flex; flex-direction: column; }
 .pop-up .pop-up-shell .pop-up-header { display: flex; flex-direction: row; justify-content: space-between; }
 .pop-up .pop-up-shell img { height: 40px; margin-bottom: 10px; }
-.pop-up .pop-up-shell .pop-up-content h4 { text-transform: unset; font-size: 26px; font-weight: 700; }
-.pop-up .pop-up-shell .pop-up-content div { font-size: 14px; margin-bottom: 20px; letter-spacing: 1px; }
-.pop-up .pop-up-shell .pop-up-content p { font-size: 14px; margin-bottom: 20px; }
 .pop-up .pop-up-shell .pop-up-content .title-bold { color: black; font-weight: 700; }
 .pop-up .pop-up-shell .pop-up-content ul { list-style-type: disc; margin-top: 0; }
 
-.react-modal-container { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+@media only screen and (min-width: 1000px) {
+  .react-modal-container { outline: none; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 70%; height: 98%; overflow: auto; }
+  .pop-up .pop-up-shell .pop-up-content h4 { text-transform: unset; font-size: 26px; font-weight: 700; }
+  .pop-up .pop-up-shell .pop-up-content div { font-size: 14px; margin-bottom: 20px; letter-spacing: 1px; }
+  .pop-up .pop-up-shell .pop-up-content p { font-size: 14px; margin-bottom: 20px; }
+  .pop-up-shell-outer { padding: 50px 100px; }
+}
+@media only screen and (max-width: 1000px) {
+  .react-modal-container { outline: none; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%; height: 98%; overflow: auto; }
+  .pop-up .pop-up-shell .pop-up-content h4 { text-transform: unset; font-size: 22px; font-weight: 700; }
+  .pop-up .pop-up-shell .pop-up-content div { font-size: 14px; margin-bottom: 20px; letter-spacing: 1px; }
+  .pop-up .pop-up-shell .pop-up-content p { font-size: 14px; margin-bottom: 20px; }
+  .pop-up-shell-outer { padding: 5% 5%; }
+  .pop-up-content h2 { font-size: 24px; }
+}
