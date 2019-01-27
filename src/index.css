@@ -1,23 +1,27 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-/*
-Scroll Styles
+
+/* Scroll Styles
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 
-.button { color: white; background-color: #1ad565; border-radius: 4px; width: 120px; }
+/* COMMON CSS */
+h1 { font-size: 58px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+h2 { font-size: 46px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+h4 { font-size: 18px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #1cd667 }
+p { font-size: 18px; line-height: 28px; letter-spacing: 1px; }
+span { color: #1cd667; font-weight: 600; }
+
+.button { color: white; background-color: #1ad565; border-radius: 4px; width: 120px; padding: 12px 20px; font-size: 14px; letter-spacing: 1px; text-decoration: none; text-align: center; }
 .button:hover { background-color: #0ad059; }
+
+.button.no-background { border: 2px solid #1cd667; color: black; background-color: transparent; padding: 10px; font-size: 12px; font-weight: 600; }
 
 .app-container {
   max-width: 100%;
@@ -27,7 +31,6 @@ code {
   flex-direction: column;
   font-family: Helvetica;
 }
-*/
 
 /* SECTION HEADER */
 .section-header { width: 100%; height: 90px; background-color: white; position: fixed; font-size: 14px; color: #9a9a9a; letter-spacing: 1px; }
@@ -43,5 +46,24 @@ code {
 /* SECTION HOME PAGE */
 .section-home {
   background-image: url('./images/header.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 740px;
+  background-position: center;
 }
-/* .section-home img { width: 100%; height: 740px; object-fit: cover; z-index: -1; } */
+.section-home-shell { max-width: 960px; width: 100%; margin: 200px auto; }
+.section-home-shell-inner { width: 470px; display: flex; flex-direction: column; }
+.section-home-shell-inner p { margin-top: 0; width: 406px; }
+.section-home-shell h1 { text-align: left; margin-bottom: 26px; }
+
+/* SECTION TALENTS WANTED */
+.section-talents-wanted { display: flex; flex-direction: column; }
+.section-talents-shell { margin: 0 auto; text-align: center; }
+.section-talents-wanted h2 { margin-bottom: 10px; }
+.section-talents-wanted p { width: 590px; }
+.section-talents-items { display: flex; flex-direction: row; margin: 10px auto; }
+.talents-item { background-color: white; border-radius: 5px; box-shadow: -1px 13px 20px 0 #f0f2f4; height: 230px; width: 300px; padding: 40px 10px 0px 30px; margin-right: 20px; }
+.talents-item p { width: auto; font-size: 14px; text-align: left; line-height: 26px; margin-bottom: 20px; }
+.section-talents-items .talents-item img { height: 10px; vertical-align: middle; padding-left: 8px; }
+.section-talents-wanted .nav-buttons-container { margin: 40px auto 0 auto; }
