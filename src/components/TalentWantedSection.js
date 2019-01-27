@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import { horizontalScroll } from '../utils/horizontalScroll';
-import ArrowRight from '../images/arrow-right.png';
+import ArrowRight from '../images/arrow-right.svg';
+import ArrowLeft from '../images/arrow-left.svg';
 import listedPositions from '../data/listed-positions.json';
 
 function TalentsItem({ positionTitle, description, style }) {
@@ -78,8 +79,13 @@ export class TalentWantedSection extends Component {
         </div>
 
         <div className="nav-buttons-container">
-          <a className="button-circle" onClick={this.scrollLeft}>{'<'}</a>
-          <a className="button-circle" onClick={this.scrollRight}>{'>'}</a>
+          <a className="button-circle" onClick={this.scrollLeft}>
+            <img alt="" src={ArrowLeft} />
+          </a>
+
+          <a className="button-circle" onClick={this.scrollRight}>
+            <img alt="" src={ArrowRight} />
+          </a>
         </div>
       </section>
     );

@@ -24,7 +24,7 @@ export class JoinNowPopup extends Component {
                 We build software to do real work. Join our Team.
             </p>
 
-              <p>
+              <div>
                 <span className="title-bold">As a Robotics Software Developer, you will: </span>
 
                 <ul>
@@ -48,9 +48,9 @@ export class JoinNowPopup extends Component {
                     the experience of building a company from customer discovery to sales to marketing, you can participate and learn all aspects of business.
                 </li>
                 </ul>
-              </p>
+              </div>
 
-              <p>
+              <div>
                 <span className="title-bold">As a candidate you already:</span>
 
                 <ul>
@@ -84,9 +84,9 @@ export class JoinNowPopup extends Component {
                     Desire to free humans from hard, manual labor
                 </li>
                 </ul>
-              </p>
+              </div>
 
-              <p>
+              <div>
                 <span className="title-bold">You might also (nice-to-have):</span>
 
                 <ul>
@@ -106,7 +106,7 @@ export class JoinNowPopup extends Component {
                     Appreciate a results-based, startup culture
                 </li>
                 </ul>
-              </p>
+              </div>
             </div>
 
             <a href="/#" className="button">Join our team</a>

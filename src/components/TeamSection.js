@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
-import { horizontalScroll } from  '../utils/horizontalScroll';
+import { horizontalScroll } from '../utils/horizontalScroll';
 import Girl from '../images/girl_temp.PNG';
 import teamMembers from '../data/team-members.json'
+import ArrowLeft from '../images/arrow-left.svg';
+import ArrowRight from '../images/arrow-right.svg';
 
 function TeamMemberItem({ name, position, style }) {
   return (
@@ -76,8 +78,13 @@ export class TeamSection extends Component {
         </div>
 
         <div className="nav-buttons-container">
-          <a className="button-circle" onClick={this.scrollLeft}>{'<'}</a>
-          <a className="button-circle" onClick={this.scrollRight}>{'>'}</a>
+          <a className="button-circle" onClick={this.scrollLeft}>
+            <img alt="" src={ArrowLeft} />
+          </a>
+
+          <a className="button-circle" onClick={this.scrollRight}>
+            <img alt="" src={ArrowRight} />
+          </a>
         </div>
       </section>
     );

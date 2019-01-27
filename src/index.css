@@ -14,8 +14,11 @@ ul { list-style-type: none; }
 
 .button.no-background { border: 2px solid #1cd667; color: black; background-color: transparent; padding: 10px; font-size: 12px; font-weight: 600; }
 .button.no-background:hover { background-color: #1cd667; color: white; }
-.button-circle { background-color: white; text-decoration: none; box-shadow: 3px 3px 7px 0 #c5c5c5; margin-right: 20px; width: 55px; height: 55px; border-radius: 100%;}
+
+.button-circle { background-color: white; text-decoration: none; box-shadow: 3px 3px 7px 0 #c5c5c5; margin-right: 20px; width: 55px; height: 55px; border-radius: 100%; text-align: center; }
 .button-circle:hover { background-color: #1ad565; }
+.button-circle img { height: 32px; width: 32px; margin-top: 10px; }
+
 .btn-join-our-team { color: #1cd667; text-decoration: none; font-weight: 600; }
 .btn-join-our-team:hover { text-decoration: underline }
 
@@ -72,6 +75,7 @@ ul { list-style-type: none; }
 .talents-item p { width: auto; font-size: 14px; text-align: left; line-height: 26px; margin-bottom: 20px; }
 .section-talents-items .talents-item img { height: 10px; vertical-align: middle; padding-left: 8px; }
 .section-talents-wanted .nav-buttons-container { display: flex; flex-direction: row; margin: 40px auto 60px auto; }
+.section-talents-wanted .nav-buttons-container a img svg { fill: tomato; }
 
 /* SECTION HOW WE WORK */
 .section-how-we-work { background-image: url('./images/how-we-work.png'); }
@@ -120,6 +124,7 @@ ul { list-style-type: none; }
 .pop-up .pop-up-shell .pop-up-header { display: flex; flex-direction: row; justify-content: space-between; }
 .pop-up .pop-up-shell img { height: 40px; margin-bottom: 10px; }
 .pop-up .pop-up-shell .pop-up-content h4 { text-transform: unset; font-size: 26px; font-weight: 700; }
+.pop-up .pop-up-shell .pop-up-content div { font-size: 14px; margin-bottom: 20px; }
 .pop-up .pop-up-shell .pop-up-content p { font-size: 14px; margin-bottom: 20px; }
 .pop-up .pop-up-shell .pop-up-content .title-bold { color: black; font-weight: 700; }
 .pop-up .pop-up-shell .pop-up-content ul { list-style-type: disc; margin-top: 0; }
