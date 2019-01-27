@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import { Navbar } from './components/Navbar';
 import { HomeSection } from './components/HomeSection';
 import { TalentWantedSection } from './components/TalentWantedSection';
+import { HowWeWorkSection } from './components/HowWeWork';
+import { TeamSection } from './components/TeamSection';
+import { ContactUsSection } from './components/ContactUsSection';
+import { FooterSection } from './components/FooterSection';
 
 class App extends Component {
   render() {
@@ -10,23 +14,10 @@ class App extends Component {
         <Navbar />
         <HomeSection />
         <TalentWantedSection />
-
-        <div className="section-how-we-work">
-          how we work
-        </div>
-
-        <div className="section-our-team">
-          out team
-        </div>
-
-        <div className="section-contact-us">
-          how to reach us
-        </div>
-
-        <div className="section-footer">
-          footer
-        </div>
-
+        <HowWeWorkSection />
+        <TeamSection />
+        <ContactUsSection />
+        <FooterSection />
       </div>
     );
   }

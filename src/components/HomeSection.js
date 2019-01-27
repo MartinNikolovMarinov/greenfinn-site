@@ -10,7 +10,7 @@ export class HomeSection extends Component {
 
             <p><span>Reinvent,</span>
               <span>&nbsp; innovate</span> and
-                <span>expand</span> your digital footprint
+                <span>&nbsp; expand</span> your digital footprint
                       with a forward-thinking partner.</p>
 
             <a href='/#' className="button">Join our team</a>

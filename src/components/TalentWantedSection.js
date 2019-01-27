@@ -67,8 +67,8 @@ export class TalentWantedSection extends Component {
         </div>
 
         <div className="nav-buttons-container">
-          <a className="button no-background" href="/#">btn 1</a>
-          <a className="button no-background" href="/#">btn 2 </a>
+          <a className="button-circle" href="/#"> 1</a>
+          <a className="button-circle" href="/#"> 2 </a>
         </div>
       </section>
     );
