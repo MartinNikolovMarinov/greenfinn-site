@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Logo from '../images/logo-horizontal.png';
@@ -15,7 +16,7 @@ export class JoinNowPopup extends Component {
             <div className="pop-up-header">
               <img alt="" src={Logo} />
 
-              <a href="/#" onClick={this.props.closeModal}>X</a>
+              <a onClick={this.props.closeModal}>X</a>
             </div>
 
             <div className="pop-up-content">

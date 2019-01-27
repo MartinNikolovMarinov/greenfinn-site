@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -20,7 +21,7 @@ export class HomeSection extends Component {
               with a forward-thinking partner.
             </p>
 
-            <a href='/#' className="button" onClick={this.props.openModal}>Join our team</a>
+            <a className="button" onClick={this.props.openModal}>Join our team</a>
           </div>
         </div>
       </section>

@@ -6,13 +6,13 @@ import ArrowRight from '../images/arrow-right.svg';
 import ArrowLeft from '../images/arrow-left.svg';
 import listedPositions from '../data/listed-positions.json';
 
-function TalentsItem({ positionTitle, description, style }) {
+function TalentsItem({ positionTitle, description, style, openModal }) {
   return (
     <div className="talents-item" style={style}>
       <div className="talents-item-shell">
         <h4>{`< ${positionTitle} >`}</h4>
         <p>{description}</p>
-        <a href="/#" className="button no-background">
+        <a className="button no-background" onClick={openModal}>
           More info <img alt='' src={ArrowRight} />
         </a>
       </div>
@@ -67,7 +67,7 @@ export class TalentWantedSection extends Component {
           <p>
             We are hiring software roboticists who want to do applied
             robotics, now. We build software to do real work.
-            <a href="/#" className="btn-join-our-team" onClick={this.props.openModal}>
+            <a className="btn-join-our-team" onClick={this.props.openModal}>
               Join our Team.
             </a>
           </p>
@@ -81,6 +81,7 @@ export class TalentWantedSection extends Component {
                 style={{ height: ITEM_HEIGHT + 'px', width: ITEM_WIDTH + 'px' }}
                 positionTitle={p.positionTitle}
                 description={p.description}
+                openModal={this.props.openModal}
               />
             )
           }
