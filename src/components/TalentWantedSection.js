@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
-import { horizontalScroll } from  '../utils/horizontalScroll';
+import { horizontalScroll } from '../utils/horizontalScroll';
 import ArrowRight from '../images/arrow-right.png';
 import listedPositions from '../data/listed-positions.json';
 
@@ -60,7 +60,7 @@ export class TalentWantedSection extends Component {
           <h2>Talents wanted</h2>
           <p>
             We are hiring software roboticists who want to do applied
-            robotics, now. We build software to do real work. <span>Join our Team.</span>
+            robotics, now. We build software to do real work. <a href="/#" className="btn-join-our-team">Join our Team.</a>
           </p>
         </div>
 

@@ -6,6 +6,7 @@ import { HowWeWorkSection } from './components/HowWeWork';
 import { TeamSection } from './components/TeamSection';
 import { ContactUsSection } from './components/ContactUsSection';
 import { FooterSection } from './components/FooterSection';
+import { JoinNowPopup } from './components/JoinNowPopup';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <TeamSection />
         <ContactUsSection />
         <FooterSection />
+        <JoinNowPopup />
       </div>
     );
   }

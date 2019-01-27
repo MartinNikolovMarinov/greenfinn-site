@@ -14,7 +14,7 @@ export class ContactUsSection extends Component {
                   <li className="contact-us-list-item">
                     <h4>Jobs</h4>
                     <p>jobs@greenfinn.com</p>
-                    <p><span>Join Our Team</span></p>
+                    <p><a href="/#" className="btn-join-our-team">Join Our Team</a></p>
                   </li>
 
                   <li className="contact-us-list-item">

@@ -15,26 +15,26 @@ export class FooterSection extends Component {
             <li className="section-footer-list-item">
               <h4>Company</h4>
 
-              <p>About us</p>
-              <p>Team</p>
-              <p>Jobs</p>
-              <p>Contact</p>
+              <a href="/#">About us</a>
+              <a href="/#">Team</a>
+              <a href="/#">Jobs</a>
+              <a href="/#">Contact</a>
             </li>
 
             <li className="section-footer-list-item">
               <h4>Invest</h4>
 
-              <p>Features</p>
-              <p>How it works</p>
-              <p>Pricing</p>
+              <a href="/#">Features</a>
+              <a href="/#">How it works</a>
+              <a href="/#">Pricing</a>
             </li>
 
             <li className="section-footer-list-item">
               <h4>Legal</h4>
 
-              <p>Privacy</p>
-              <p>Terms</p>
-              <p>Security</p>
+              <a href="/#">Privacy</a>
+              <a href="/#">Terms</a>
+              <a href="/#">Security</a>
             </li>
           </ul>
         </div>

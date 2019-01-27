@@ -16,6 +16,8 @@ ul { list-style-type: none; }
 .button.no-background:hover { background-color: #1cd667; color: white; }
 .button-circle { background-color: white; text-decoration: none; box-shadow: 3px 3px 7px 0 #c5c5c5; margin-right: 20px; width: 55px; height: 55px; border-radius: 100%;}
 .button-circle:hover { background-color: #1ad565; }
+.btn-join-our-team { color: #1cd667; text-decoration: none; font-weight: 600; }
+.btn-join-our-team:hover { text-decoration: underline }
 
 .app-container { max-width: 100%; max-height: 100%; background-color: white; display: flex; flex-direction: column; font-family: Helvetica; }
 
@@ -107,4 +109,17 @@ ul { list-style-type: none; }
 .section-footer .section-footer-shell .section-footer-list img { height: 40px; margin-bottom: 20px; }
 .section-footer .section-footer-shell .section-footer-list-item { display: flex; flex-direction: column; }
 .section-footer .section-footer-shell .section-footer-list-item h4 { font-weight: 500; }
-.section-footer .section-footer-shell .section-footer-list-item p { margin: 0; margin-bottom: 12px; }
+.section-footer .section-footer-shell .section-footer-list-item a { margin: 0; margin-bottom: 12px; text-decoration: none; color: black; }
+.section-footer .section-footer-shell .section-footer-list-item:first-child a { color: white; }
+
+/* POP UP */
+/* .pop-up { background-color:rgba(192,192,192,0.7); } */
+/* .pop-up { position: absolute; } */
+.pop-up-shell-outer { background-color: white; padding: 50px 100px; width: 1000px; height: 900px; margin: 20% auto; border-radius: 5px; box-shadow: -1px 13px 20px 0 #f0f2f4; }
+.pop-up .pop-up-shell { display: flex; flex-direction: column; }
+.pop-up .pop-up-shell .pop-up-header { display: flex; flex-direction: row; justify-content: space-between; }
+.pop-up .pop-up-shell img { height: 40px; margin-bottom: 10px; }
+.pop-up .pop-up-shell .pop-up-content h4 { text-transform: unset; font-size: 26px; font-weight: 700; }
+.pop-up .pop-up-shell .pop-up-content p { font-size: 14px; margin-bottom: 20px; }
+.pop-up .pop-up-shell .pop-up-content .title-bold { color: black; font-weight: 700; }
+.pop-up .pop-up-shell .pop-up-content ul { list-style-type: disc; margin-top: 0; }

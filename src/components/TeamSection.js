@@ -58,7 +58,7 @@ export class TeamSection extends Component {
           <h2>Our team</h2>
           <p className="team-sub-title">
             Each member of our team is a specialist in his or her field. Together,
-            we are building loyalty across every touchpoint. <span>Join our Team.</span>
+            we are building loyalty across every touchpoint. <a href="/#" className="btn-join-our-team">Join our Team.</a>
           </p>
         </div>
 
