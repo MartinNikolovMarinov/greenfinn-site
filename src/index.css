@@ -6,6 +6,8 @@ h4 { font-size: 18px; font-weight: bold; text-transform: uppercase; letter-spaci
 p { font-size: 18px; line-height: 28px; letter-spacing: 1px; }
 span { color: #1cd667; font-weight: 600; }
 
+::-webkit-scrollbar { display: none; }
+
 .button { color: white; background-color: #1ad565; border-radius: 4px; width: 120px; padding: 12px 20px; font-size: 14px; letter-spacing: 1px; text-decoration: none; text-align: center; }
 .button:hover { background-color: #0ad059; }
 
@@ -50,8 +52,23 @@ span { color: #1cd667; font-weight: 600; }
 .section-talents-shell { margin: 0 auto; text-align: center; }
 .section-talents-wanted h2 { margin-bottom: 10px; }
 .section-talents-wanted p { width: 590px; }
-.section-talents-items { display: flex; flex-direction: row; margin: 10px auto; }
-.talents-item { background-color: white; border-radius: 5px; box-shadow: -1px 13px 20px 0 #f0f2f4; height: 230px; width: 300px; padding: 40px 10px 0px 30px; margin-right: 20px; }
+.section-talents-items {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 960px;
+}
+.talents-item {
+  flex: 0 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: -1px 13px 20px 0 #f0f2f4;
+  padding: 40px 10px 0px 30px;
+  margin-right: 20px;
+}
 .talents-item p { width: auto; font-size: 14px; text-align: left; line-height: 26px; margin-bottom: 20px; }
 .section-talents-items .talents-item img { height: 10px; vertical-align: middle; padding-left: 8px; }
 .section-talents-wanted .nav-buttons-container { margin: 40px auto 0 auto; }

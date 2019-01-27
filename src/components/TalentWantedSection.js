@@ -1,10 +1,12 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
+import { horizontalScroll } from  '../utils/horizontalScroll';
 import ArrowRight from '../images/arrow-right.png';
 import listedPositions from '../data/listed-positions.json';
 
-function TalentsItem({ positionTitle, description }) {
+function TalentsItem({ positionTitle, description, style }) {
   return (
-    <div className="talents-item" style={{ height: '230px', width: '300px' }}>
+    <div className="talents-item" style={style}>
       <div className="talents-item-shell">
         <h4>{positionTitle}</h4>
         <p>{description}</p>
@@ -16,14 +18,37 @@ function TalentsItem({ positionTitle, description }) {
   );
 }
 
+const ITEM_HEIGHT = 230;
+const ITEM_WIDTH = 300;
+
 export class TalentWantedSection extends Component {
 
   state = {
     listedPositions: []
   }
 
+  scrollContainer = React.createRef();
+
+  constructor(props) {
+    super(props);
+    this.scrollLeft = this.scrollLeft.bind(this);
+    this.scrollRight = this.scrollRight.bind(this);
+  }
+
   componentDidMount() {
     this.setState({ listedPositions })
+  }
+
+  scrollLeft() {
+    if (this.scrollContainer.current) {
+      horizontalScroll(this.scrollContainer.current, -ITEM_WIDTH * 15, 550);
+    }
+  }
+
+  scrollRight() {
+    if (this.scrollContainer.current) {
+      horizontalScroll(this.scrollContainer.current, ITEM_WIDTH * 15, 550);
+    }
   }
 
   render() {
@@ -39,12 +64,12 @@ export class TalentWantedSection extends Component {
           </p>
         </div>
 
-        <div className="section-talents-items">
+        <div className="section-talents-items" ref={this.scrollContainer}>
           {
             listedPositions.map((p, i) =>
               <TalentsItem
                 key={i}
-                style={{ height: '230px', width: '300px' }}
+                style={{ height: ITEM_HEIGHT + 'px', width: ITEM_WIDTH + 'px' }}
                 positionTitle={p.positionTitle}
                 description={p.description}
               />
@@ -53,8 +78,8 @@ export class TalentWantedSection extends Component {
         </div>
 
         <div className="nav-buttons-container">
-          <a className="button no-background" href="/#">btn 1</a>
-          <a className="button no-background" href="/#">btn 2 </a>
+          <a className="button no-background" onClick={this.scrollLeft}>Left</a>
+          <a className="button no-background" onClick={this.scrollRight}>Right</a>
         </div>
       </section>
     );
