@@ -63,7 +63,7 @@ export class TeamSection extends Component {
           <p className="team-sub-title">
             Each member of our team is a specialist in his or her field. Together,
             we are building loyalty across every touchpoint.
-            <a href="/#" className="btn-join-our-team" onClick={this.props.openModal}>
+            <a className="btn-join-our-team" onClick={this.props.openModal}>
               Join our Team.
             </a>
           </p>

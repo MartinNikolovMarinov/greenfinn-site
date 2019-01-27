@@ -10,17 +10,6 @@ import { ContactUsSection } from './components/ContactUsSection';
 import { FooterSection } from './components/FooterSection';
 import { JoinNowPopup } from './components/JoinNowPopup';
 
-const customStyles = {
-  content : {
-    top                   : '50%',
-    left                  : '50%',
-    right                 : 'auto',
-    bottom                : 'auto',
-    marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
-  }
-};
-
 class App extends Component {
 
   state = {

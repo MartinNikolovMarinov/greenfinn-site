@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
@@ -20,7 +21,7 @@ export class ContactUsSection extends Component {
                     <h4>Jobs</h4>
                     <p>jobs@greenfinn.com</p>
                     <p>
-                      <a href="/#" className="btn-join-our-team" onClick={this.props.openModal}>
+                      <a className="btn-join-our-team" onClick={this.props.openModal}>
                         Join Our Team
                       </a>
                     </p>
