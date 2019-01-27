@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import { horizontalScroll } from '../utils/horizontalScroll';
 import Girl from '../images/girl_temp.PNG';
 import teamMembers from '../data/team-members.json'
-import ArrowLeft from '../images/arrow-left.svg';
-import ArrowRight from '../images/arrow-right.svg';
 
 function TeamMemberItem({ name, position, style }) {
   return (
@@ -86,11 +84,11 @@ export class TeamSection extends Component {
 
         <div className="nav-buttons-container">
           <a className="button-circle" onClick={this.scrollLeft}>
-            <img alt="" src={ArrowLeft} />
+            <div className="left-arrow"></div>
           </a>
 
           <a className="button-circle" onClick={this.scrollRight}>
-            <img alt="" src={ArrowRight} />
+            <div className="right-arrow"></div>
           </a>
         </div>
       </section>

@@ -28,6 +28,12 @@ export class Navbar extends Component {
             onClick={this.scrollToTop}
           />
 
+          <div className="hamburger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
           <ul className="section-header-nav">
             <li className="nav-item">
               <Link

@@ -2,8 +2,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { horizontalScroll } from '../utils/horizontalScroll';
-import ArrowRight from '../images/arrow-right.svg';
-import ArrowLeft from '../images/arrow-left.svg';
 import listedPositions from '../data/listed-positions.json';
 
 function TalentsItem({ positionTitle, description, style }) {
@@ -13,7 +11,7 @@ function TalentsItem({ positionTitle, description, style }) {
         <h4>{`< ${positionTitle} >`}</h4>
         <p>{description}</p>
         <a href="/#" className="button no-background">
-          More info <img alt='' src={ArrowRight} />
+          More info <div className="right-arrow no-margin"></div>
         </a>
       </div>
     </div>
@@ -88,11 +86,11 @@ export class TalentWantedSection extends Component {
 
         <div className="nav-buttons-container">
           <a className="button-circle" onClick={this.scrollLeft}>
-            <img alt="" src={ArrowLeft} />
+            <div className="left-arrow"></div>
           </a>
 
           <a className="button-circle" onClick={this.scrollRight}>
-            <img alt="" src={ArrowRight} />
+            <div className="right-arrow"></div>
           </a>
         </div>
       </section>
