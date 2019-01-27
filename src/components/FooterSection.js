@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Logo from '../images/logo-horizontal.png';
 
 export class FooterSection extends Component {
+  static propTypes = {
+    openModal: PropTypes.func.isRequired
+  }
+
   render() {
     return (
       <section className="section-footer">
@@ -9,7 +14,9 @@ export class FooterSection extends Component {
           <ul className="section-footer-list">
             <li className="section-footer-list-item">
               <img alt="" src={Logo} />
-              <a href="/#" className="button">Join our team</a>
+              <a href="/#" className="button" onClick={this.props.openModal}>
+                Join Our Team
+              </a>
             </li>
 
             <li className="section-footer-list-item">

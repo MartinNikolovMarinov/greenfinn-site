@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import LogoHorizontal from '../images/logo-horizontal.png';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 export class Navbar extends Component {
+
+  static propTypes = {
+    openModal: PropTypes.func.isRequired
+  }
 
   constructor(props) {
     super(props);
@@ -63,7 +68,7 @@ export class Navbar extends Component {
               </Link>
             </li>
 
-            <li className="nav-item button">
+            <li className="nav-item button" onClick={this.props.openModal}>
               Join our team
             </li>
           </ul>

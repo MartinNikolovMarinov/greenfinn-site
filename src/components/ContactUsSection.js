@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export class ContactUsSection extends Component {
+  static propTypes = {
+    openModal: PropTypes.func.isRequired
+  }
+
   render() {
     return (
       <section className="section-contact-us">
@@ -14,7 +19,11 @@ export class ContactUsSection extends Component {
                   <li className="contact-us-list-item">
                     <h4>Jobs</h4>
                     <p>jobs@greenfinn.com</p>
-                    <p><a href="/#" className="btn-join-our-team">Join Our Team</a></p>
+                    <p>
+                      <a href="/#" className="btn-join-our-team" onClick={this.props.openModal}>
+                        Join Our Team
+                      </a>
+                    </p>
                   </li>
 
                   <li className="contact-us-list-item">

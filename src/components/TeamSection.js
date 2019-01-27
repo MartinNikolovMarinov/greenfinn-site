@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { horizontalScroll } from '../utils/horizontalScroll';
 import Girl from '../images/girl_temp.PNG';
 import teamMembers from '../data/team-members.json'
@@ -22,6 +23,9 @@ const ITEM_HEIGHT = 230;
 const ITEM_WIDTH = 190;
 
 export class TeamSection extends Component {
+  static propTypes = {
+    openModal: PropTypes.func.isRequired
+  }
 
   state = {
     teamMembers: []
@@ -60,7 +64,10 @@ export class TeamSection extends Component {
           <h2>Our team</h2>
           <p className="team-sub-title">
             Each member of our team is a specialist in his or her field. Together,
-            we are building loyalty across every touchpoint. <a href="/#" className="btn-join-our-team">Join our Team.</a>
+            we are building loyalty across every touchpoint.
+            <a href="/#" className="btn-join-our-team" onClick={this.props.openModal}>
+              Join our Team.
+            </a>
           </p>
         </div>
 
