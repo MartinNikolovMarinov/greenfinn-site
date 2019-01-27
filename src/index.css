@@ -1,17 +1,5 @@
-body {
-  margin: 0;
-  overflow-x: hidden;
-}
-
-
-/* Scroll Styles
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
-
 /* COMMON CSS */
+body { margin: 0; overflow-x: hidden; }
 h1 { font-size: 58px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
 h2 { font-size: 46px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
 h4 { font-size: 18px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #1cd667 }

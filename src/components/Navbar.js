@@ -1,80 +1,70 @@
-import React, { Component } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import React, { Component } from 'react';
+import LogoHorizontal from '../images/logo-horizontal.png';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
-export default class Navbar extends Component {
-  scrollToTop = () => {
+export class Navbar extends Component {
+
+  constructor(props) {
+    super(props);
+    this.scrollToTop = this.scrollToTop.bind(this);
+  }
+
+  scrollToTop() {
     scroll.scrollToTop();
   };
 
   render() {
     return (
-      <nav className="nav" id="navbar">
-        <div className="nav-content">
+      <nav className="section-header">
+        <div className="section-header-inner">
           <img
-            className="nav-logo"
-            alt="Logo"
+            src={LogoHorizontal}
+            alt="Logo Horizontal"
             onClick={this.scrollToTop}
           />
-          <ul className="nav-items">
+
+          <ul className="section-header-nav">
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section1"
+                to="talents-wanted-section"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
-                Section 1
+                Talents Wanted
               </Link>
             </li>
+
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section2"
+                to="how-we-work-section"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
-                Section 2
+                How We Work
               </Link>
             </li>
+
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section3"
+                to="team-section"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
-                Section 3
+                Team
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="section4"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Section 4
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="section5"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Section 5
-              </Link>
+
+            <li className="nav-item button">
+              Join our team
             </li>
           </ul>
         </div>
