@@ -78,8 +78,8 @@ export class TalentWantedSection extends Component {
         </div>
 
         <div className="nav-buttons-container">
-          <a className="button no-background" onClick={this.scrollLeft}>Left</a>
-          <a className="button no-background" onClick={this.scrollRight}>Right</a>
+          <a className="button-circle" onClick={this.scrollLeft}>{'<'}</a>
+          <a className="button-circle" onClick={this.scrollRight}>{'>'}</a>
         </div>
       </section>
     );

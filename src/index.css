@@ -57,6 +57,7 @@ ul { list-style-type: none; }
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   width: 960px;
+  height: 300px;
 }
 .talents-item {
   flex: 0 0 auto;
