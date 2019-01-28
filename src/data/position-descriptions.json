@@ -1,0 +1,110 @@
+{
+  "seniorDeveloper": {
+    "name": "Senior / Developer",
+    "type": "Robotic Position",
+    "descriptionLines": [
+      "We are hiring software roboticists who want to do applied robotics, now.",
+      "We build software to do real work. Join our Team."
+    ],
+    "responsibilities": [
+      {
+        "title": "As a Robotics Software Developer, you will:",
+        "list": [
+          {
+            "paragraphs": [
+              "Develop software for our autonomous indoor and outdoor robotics",
+              "platform using the Robotic Operating System (ROS), Python, C++, and more."
+            ]
+          },
+          {
+            "paragraphs": [
+              "Code-review, pair-program, and problem solve with teammates"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Participate in daily stand-ups, weekly sprint planning, retrospectives, and roadmap planning"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Build a great company: it’s up to you how involved you want to be. We are an open book and share",
+              "the experience of building a company from customer discovery to sales to marketing, you can participate and learn all aspects of business."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "As a candidate you already:",
+        "list": [
+          {
+            "paragraphs": [
+              "Have software development experience and solid engineering practices"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Have experience with areas in robotics such as: control systems, machine vision,",
+              "obstacle avoidance, SLAM, and/or other robotics algorithms and libraries"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Have used the Robotic Operating System (ROS) and simulation with Gazebo"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Know Python or other high-level scripting languages"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Know C++ or other lower-level embedded languages"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Have experience with Linux from installation to package management"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Desire to free humans from hard, manual labor"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "You might also (nice-to-have):",
+        "list": [
+          {
+            "paragraphs": [
+              "Understand machine learning fundamentals and the most common libraries"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Grow your food on your balcony or a community garden"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Have used the Robotic Operating System (ROS) and simulation with Gazebo"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Have a customized bash (or zsh) profile and your ssh keys are on at least one other server on the cloud"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Appreciate a results-based, startup culture"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

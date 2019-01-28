@@ -13,7 +13,8 @@ import { JoinNowPopup } from './components/JoinNowPopup';
 class App extends Component {
 
   state = {
-    modalIsOpen: false
+    modalIsOpen: false,
+    modalData: undefined
   }
 
   constructor(props) {
@@ -22,16 +23,16 @@ class App extends Component {
     this.closeModal = this.closeModal.bind(this);
   }
 
-  openModal() {
-    this.setState({ modalIsOpen: true });
+  openModal(modalData) {
+    this.setState({ modalIsOpen: true, modalData });
   }
 
   closeModal() {
-    this.setState({ modalIsOpen: false });
+    this.setState({ modalIsOpen: false, modalData: undefined });
   }
 
   render() {
-    const { modalIsOpen } = this.state;
+    const { modalIsOpen, modalData } = this.state;
 
     return (
       <div className="app-container">
@@ -41,7 +42,10 @@ class App extends Component {
           contentLabel="Example Modal"
           className="react-modal-container"
         >
-          <JoinNowPopup closeModal={this.closeModal} />
+          <JoinNowPopup
+            closeModal={this.closeModal}
+            positionId={modalData ? modalData.positionId : undefined}
+          />
         </Modal>
 
         <Navbar openModal={this.openModal} />
