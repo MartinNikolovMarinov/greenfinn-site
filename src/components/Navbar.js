@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import positionTypes from '../utils/positionTypes';
+import companyInfo from '../data/company-info.json';
 import LogoHorizontal from '../images/logo-horizontal.png';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
@@ -75,11 +75,13 @@ export class Navbar extends Component {
               </Link>
             </li>
 
-            <li
-              className="nav-item button"
-              onClick={() => this.props.openModal({ positionId: positionTypes.seniorDeveloper })}
-            >
-              Join our team
+            <li className="nav-item button" >
+              <a
+                className="nav-join-us-a"
+                href={`mailto:${companyInfo.email}?Subject=${companyInfo['email-subjet']}`}
+              >
+                Join our team
+              </a>
             </li>
           </ul>
         </div>

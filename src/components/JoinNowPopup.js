@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Logo from '../images/logo-horizontal.png';
 import CloseIcon from '../images/close.svg';
 import positionDescriptions from '../data/position-descriptions.json';
+import companyInfo from '../data/company-info.json';
 
 function Description({ lines }) {
   return (
@@ -115,7 +116,7 @@ export class JoinNowPopup extends Component {
             </div>
 
             <a
-              href="mailto:someone@example.com?Subject=Hello%20again"
+              href={`mailto:${companyInfo.email}?Subject=${companyInfo['email-subjet']}`}
               className="button"
               style={{ width: '200px' }}
             >

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import positionTypes from '../utils/positionTypes';
+import companyInfo from '../data/company-info.json';
 import Logo from '../images/logo-horizontal.png';
 
 export class FooterSection extends Component {
@@ -18,7 +18,7 @@ export class FooterSection extends Component {
               <img alt="" src={Logo} />
               <a
                 className="button"
-                onClick={() => this.props.openModal({ positionId: positionTypes.seniorDeveloper })}
+                href={`mailto:${companyInfo.email}?Subject=${companyInfo['email-subjet']}`}
               >
                 Join Our Team
               </a>

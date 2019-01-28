@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { horizontalScroll } from '../utils/horizontalScroll';
 import listedPositions from '../data/listed-positions.json';
 import positionTypes from '../utils/positionTypes';
+import companyInfo from '../data/company-info.json';
 
 function TalentsItem({ positionTitle, description, style, openModal }) {
   return (
@@ -71,7 +72,7 @@ export class TalentWantedSection extends Component {
             robotics, now. We build software to do real work.
             <a
               className="btn-join-our-team"
-              onClick={() => this.props.openModal({ positionId: positionTypes.seniorDeveloper })}
+              href={`mailto:${companyInfo.email}?Subject=${companyInfo['email-subjet']}`}
             >
               Join our Team.
             </a>

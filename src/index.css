@@ -52,6 +52,7 @@ ul { list-style-type: none; }
 .section-header img:hover { cursor: pointer; }
 .section-header-nav { list-style-type: none; display: flex; flex-direction: row; padding-right: 70px; margin: 0; }
 .section-header-nav .nav-item { padding: 12px 20px; margin-left: 10px; text-align: center; position: relative; }
+.section-header-nav .nav-item .nav-join-us-a { text-decoration: none; color: white; }
 .section-header-nav .nav-item:nth-child(3) { margin-right: 14px; }
 .section-header-nav .nav-item:last-child { padding: 12px; }
 .section-header-nav .nav-item:hover { cursor: pointer; }

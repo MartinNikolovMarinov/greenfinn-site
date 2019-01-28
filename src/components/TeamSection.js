@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { horizontalScroll } from '../utils/horizontalScroll';
 import Girl from '../images/girl_temp.PNG';
 import teamMembers from '../data/team-members.json'
-import positionTypes from '../utils/positionTypes';
+import companyInfo from '../data/company-info.json';
 
 function TeamMemberItem({ name, position, style }) {
   return (
@@ -66,7 +66,7 @@ export class TeamSection extends Component {
             we are building loyalty across every touchpoint.
             <a
               className="btn-join-our-team"
-              onClick={() => this.props.openModal({ positionId: positionTypes.seniorDeveloper })}
+              href={`mailto:${companyInfo.email}?Subject=${companyInfo['email-subjet']}`}
             >
               Join our Team.
             </a>
