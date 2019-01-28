@@ -132,7 +132,7 @@ ul { list-style-type: none; }
 .section-how-we-work-shell .how-we-work-content { display: flex; flex-direction: row; justify-content: space-between; margin-top: 80px; }
 .how-we-work-content .content .content-icon-container img { width: 70px; height: 70px; }
 .how-we-work-content .content.lab-style h4 { padding: 0 90px; }
-.lato-font { font-family: lato; }
+.lato-font { font-family: Helvetica; }
 @media(max-width: 400px){
   .section-how-we-work { background-position: unset; height: auto; }
   .section-how-we-work-shell { margin: 0; }
