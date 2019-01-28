@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import positionTypes from '../utils/positionTypes';
 import Logo from '../images/logo-horizontal.png';
 
 export class FooterSection extends Component {
@@ -15,7 +16,10 @@ export class FooterSection extends Component {
           <ul className="section-footer-list">
             <li className="section-footer-list-item">
               <img alt="" src={Logo} />
-              <a className="button" onClick={this.props.openModal}>
+              <a
+                className="button"
+                onClick={() => this.props.openModal({ positionId: positionTypes.seniorDeveloper })}
+              >
                 Join Our Team
               </a>
             </li>

@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import positionTypes from '../utils/positionTypes';
 
 export class ContactUsSection extends Component {
   static propTypes = {
@@ -21,7 +22,10 @@ export class ContactUsSection extends Component {
                     <h4>Jobs</h4>
                     <p>jobs@greenfinn.com</p>
                     <p>
-                      <a className="btn-join-our-team" onClick={this.props.openModal}>
+                      <a
+                        className="btn-join-our-team"
+                        onClick={() => this.props.openModal({ positionId: positionTypes.seniorDeveloper })}
+                      >
                         Join Our Team
                       </a>
                     </p>

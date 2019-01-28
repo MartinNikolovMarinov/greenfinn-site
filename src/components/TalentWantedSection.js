@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { horizontalScroll } from '../utils/horizontalScroll';
 import listedPositions from '../data/listed-positions.json';
+import positionTypes from '../utils/positionTypes';
 
 function TalentsItem({ positionTitle, description, style, openModal }) {
   return (
@@ -10,7 +11,10 @@ function TalentsItem({ positionTitle, description, style, openModal }) {
       <div className="talents-item-shell">
         <h4>{`< ${positionTitle} >`}</h4>
         <p>{description}</p>
-        <a className="button no-background" onClick={openModal}>
+        <a
+          className="button no-background"
+          onClick={() => openModal({ positionId: positionTypes.seniorDeveloper })}
+        >
           More info <div className="right-arrow no-margin"></div>
         </a>
       </div>
@@ -65,7 +69,10 @@ export class TalentWantedSection extends Component {
           <p>
             We are hiring software roboticists who want to do applied
             robotics, now. We build software to do real work.
-            <a className="btn-join-our-team" onClick={this.props.openModal}>
+            <a
+              className="btn-join-our-team"
+              onClick={() => this.props.openModal({ positionId: positionTypes.seniorDeveloper })}
+            >
               Join our Team.
             </a>
           </p>

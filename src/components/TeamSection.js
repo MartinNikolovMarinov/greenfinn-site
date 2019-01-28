@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { horizontalScroll } from '../utils/horizontalScroll';
 import Girl from '../images/girl_temp.PNG';
 import teamMembers from '../data/team-members.json'
+import positionTypes from '../utils/positionTypes';
 
 function TeamMemberItem({ name, position, style }) {
   return (
@@ -63,7 +64,10 @@ export class TeamSection extends Component {
           <p className="team-sub-title">
             Each member of our team is a specialist in his or her field. Together,
             we are building loyalty across every touchpoint.
-            <a className="btn-join-our-team" onClick={this.props.openModal}>
+            <a
+              className="btn-join-our-team"
+              onClick={() => this.props.openModal({ positionId: positionTypes.seniorDeveloper })}
+            >
               Join our Team.
             </a>
           </p>
