@@ -1,14 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { horizontalScroll } from '../utils/horizontalScroll';
+import { Slider } from './Slider';
 import listedPositions from '../data/listed-positions.json';
 import positionTypes from '../utils/positionTypes';
 import companyInfo from '../data/company-info.json';
 
 function TalentsItem({ positionTitle, description, style, openModal }) {
   return (
-    <div className="talents-item" style={style}>
+    <div className="slide talents-item" style={style}>
       <div className="talents-item-shell">
         <h4>{`< ${positionTitle} >`}</h4>
         <p>{description}</p>
@@ -23,17 +23,16 @@ function TalentsItem({ positionTitle, description, style, openModal }) {
   );
 }
 
-const ITEM_HEIGHT = 230;
-const ITEM_WIDTH = 300;
-
 export class TalentWantedSection extends Component {
 
   static propTypes = {
-    openModal: PropTypes.func.isRequired
+    openModal: PropTypes.func.isRequired,
   }
 
   state = {
-    listedPositions: []
+    listedPositions: [],
+    scrollLeft: false,
+    scrollRight: false,
   }
 
   scrollContainer = React.createRef();
@@ -42,6 +41,7 @@ export class TalentWantedSection extends Component {
     super(props);
     this.scrollLeft = this.scrollLeft.bind(this);
     this.scrollRight = this.scrollRight.bind(this);
+    this.scrollFinished = this.scrollFinished.bind(this);
   }
 
   componentDidMount() {
@@ -49,19 +49,19 @@ export class TalentWantedSection extends Component {
   }
 
   scrollLeft() {
-    if (this.scrollContainer.current) {
-      horizontalScroll(this.scrollContainer.current, -ITEM_WIDTH * 15, 550);
-    }
+    this.setState({ scrollLeft: true })
   }
 
   scrollRight() {
-    if (this.scrollContainer.current) {
-      horizontalScroll(this.scrollContainer.current, ITEM_WIDTH * 15, 550);
-    }
+    this.setState({ scrollRight: true })
+  }
+
+  scrollFinished() {
+    this.setState({ scrollRight: false, scrollLeft: false })
   }
 
   render() {
-    const { listedPositions } = this.state;
+    const { listedPositions, scrollLeft, scrollRight } = this.state;
 
     return (
       <section className="section-talents-wanted" id="talents-wanted-section">
@@ -79,19 +79,18 @@ export class TalentWantedSection extends Component {
           </p>
         </div>
 
-        <div className="section-talents-items" ref={this.scrollContainer}>
+        <Slider scrollLeft={scrollLeft} scrollRight={scrollRight} scrollFinished={this.scrollFinished}>
           {
             listedPositions.map((p, i) =>
               <TalentsItem
                 key={i}
-                style={{ height: ITEM_HEIGHT + 'px', width: ITEM_WIDTH + 'px' }}
                 positionTitle={p.positionTitle}
                 description={p.description}
                 openModal={this.props.openModal}
               />
             )
           }
-        </div>
+        </Slider>
 
         <div className="nav-buttons-container">
           <a className="button-circle" onClick={this.scrollLeft}>

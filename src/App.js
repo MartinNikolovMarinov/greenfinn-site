@@ -9,6 +9,7 @@ import { TeamSection } from './components/TeamSection';
 import { ContactUsSection } from './components/ContactUsSection';
 import { FooterSection } from './components/FooterSection';
 import { JoinNowPopup } from './components/JoinNowPopup';
+import { Slider } from './components/Slider';
 
 class App extends Component {
 
@@ -36,6 +37,7 @@ class App extends Component {
 
     return (
       <div className="app-container">
+
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={this.closeModal}
