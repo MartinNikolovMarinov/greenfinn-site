@@ -24,9 +24,8 @@ export class HowWeWorkSection extends Component {
               </div>
 
               <div className="content-info">
-                <p className="lato-font">Software algorithms
-                <br /> promising open source technologies
-                <br /> robot electronics and HW
+                <p className="lato-font">Software algorithms promising open source
+                technologies robot electronics and HW
                 </p>
               </div>
             </div>
@@ -59,8 +58,8 @@ export class HowWeWorkSection extends Component {
               </div>
 
               <div className="content-info">
-                <p className="lato-font"> We can only accomplish the unusual <br /> with teams that work together <br />
-                  We work, were it is good to work, <br /> in the lab, on field trips, at home </p>
+                <p className="lato-font"> We can only accomplish the unusual with teams that work together
+                  We work, were it is good to work, in the lab, on field trips, at home </p>
               </div>
             </div>
           </div>

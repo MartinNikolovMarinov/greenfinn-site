@@ -25,11 +25,19 @@ ul { list-style-type: none; }
 .button.no-background:hover { background-color: #1cd667; color: white; }
 .button.no-background:hover > .right-arrow { border-color: white; }
 
-.button-circle { background-color: white; text-decoration: none; box-shadow: 3px 3px 7px 0 #c5c5c5; margin-right: 20px; width: 55px; height: 55px; border-radius: 100%; text-align: center; cursor: pointer; }
+.button-circle { background-color: white; text-decoration: none; box-shadow: 3px 3px 7px 0 #c5c5c5; width: 55px; height: 55px; border-radius: 100%; text-align: center; cursor: pointer; }
 .button-circle:hover { background-color: #1ad565; }
 .button-circle:hover > .left-arrow { border-color: white; }
 .button-circle:hover > .right-arrow { border-color: white; }
 .button-circle img { height: 32px; width: 32px; margin-top: 10px; }
+@media(max-width: 400px){
+  .button-circle { margin: 0 4px; }
+}
+
+@media(min-width: 500px){
+  .button-circle { margin: 0 10px; }
+}
+
 
 .btn-join-our-team { color: #1cd667; text-decoration: none; font-weight: 600; cursor: pointer; }
 .btn-join-our-team:hover { text-decoration: underline }
@@ -137,13 +145,15 @@ ul { list-style-type: none; }
 @media(max-width: 400px){
   .section-how-we-work { background-position: unset; height: auto; }
   .section-how-we-work-shell { margin: 0; }
-  .section-how-we-work-shell h2 { font-size: 16px; }
+  .section-how-we-work-shell h2 { font-size: 16px; margin-bottom: 6px; }
   .section-how-we-work-shell h4 { font-size: 9px; margin: 0; }
   .section-how-we-work-shell .how-we-work-content { margin-top: 0px; }
+  .how-we-work-content { padding: 0 12px; }
   .how-we-work-content .content { width: 100px; }
   .how-we-work-content .content .content-icon-container img { width: 40px; height: 40px; }
   .lato-font { letter-spacing: 1px; font-size: 12px; line-height: unset; }
   .how-we-work-content .content.lab-style h4 { padding: 0; }
+  .how-we-work-content .content .content-info p { font-size: 10px; }
 }
 @media(min-width: 500px){
   .section-how-we-work-shell .how-we-work-content .content { width: 300px; }
@@ -178,7 +188,6 @@ ul { list-style-type: none; }
   .section-contact-us-shell { padding-top: 21px; }
   .contact-us-shell { margin-top: 76px; }
   .section-contact-us .rectangle .rectangle-shell .contact-us-list { display: flex; flex-direction: column; }
-  .section-contact-us .rectangle .rectangle-shell { text-align: left; }
   .section-contact-us .rectangle .rectangle-shell h2 { font-size: 18px; }
   .section-contact-us .rectangle .rectangle-shell .contact-us-list .contact-us-list-item { width: auto; height: auto; }
   .section-contact-us .rectangle .rectangle-shell .contact-us-list h4 { margin-bottom: 0; }
@@ -226,4 +235,6 @@ ul { list-style-type: none; }
   .pop-up .pop-up-shell .pop-up-content p { font-size: 14px; margin-bottom: 20px; }
   .pop-up-shell-outer { padding: 5% 5%; }
   .pop-up-content h2 { font-size: 24px; }
+  .pop-up .pop-up-shell .pop-up-header .pop-up-close-btn img { height: 16px; }
+  .pop-up .pop-up-shell .pop-up-header > img { height: 24px; }
 }
