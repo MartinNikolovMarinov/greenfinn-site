@@ -104,7 +104,7 @@ ul { list-style-type: none; }
 .section-talents-wanted { display: flex; flex-direction: column; }
 .section-talents-shell { margin: 0 auto; text-align: center; }
 .section-talents-wanted h2 { margin-bottom: 10px; }
-.section-talents-wanted p { width: 590px; }
+/* .section-talents-wanted p { width: 590px; } */
 .section-talents-items {
   display: flex;
   flex-direction: row;
@@ -126,7 +126,7 @@ ul { list-style-type: none; }
 .talents-item p { width: auto; font-size: 14px; text-align: left; line-height: 26px; margin-bottom: 20px; }
 .section-talents-items .talents-item img { height: 10px; vertical-align: middle; padding-left: 8px; }
 .section-talents-wanted .nav-buttons-container { display: flex; flex-direction: row; margin: 40px auto 60px auto; }
-@media(max-width: 400px){
+@media(max-width: 400px) {
   .section-talents-wanted h2 { font-size: 24px; }
   .section-talents-shell { margin: 0; }
   .section-talents-shell p { font-size: 16px; width: auto; padding: 0 10px; }
@@ -162,7 +162,7 @@ ul { list-style-type: none; }
 
 /* SECTION OUR TEAM */
 .section-talents-shell p.team-sub-title { width: 620px; margin-bottom: 50px; }
-.talents-item-shell.team img { width: 132px; height: 132px; }
+.talents-item-shell.team img { width: 132px; height: 132px; margin: auto; }
 .talents-item-shell.team h4 { font-weight: 500; margin: 10px auto 0 auto; }
 .talents-item-shell.team p { margin: 0; font-size: 18px; }
 .talents-item.team { padding: 30px 70px; }

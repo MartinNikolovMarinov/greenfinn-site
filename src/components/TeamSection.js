@@ -1,14 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { horizontalScroll } from '../utils/horizontalScroll';
 import Girl from '../images/girl_temp.PNG';
 import teamMembers from '../data/team-members.json'
 import companyInfo from '../data/company-info.json';
 
 function TeamMemberItem({ name, position, style }) {
   return (
-    <div className="talents-item team" style={style}>
+    <div className="slide-team talents-item" style={style}>
       <div className="talents-item-shell team">
         <img alt="" src={Girl} />
         <h4>{name}</h4>
@@ -18,40 +17,48 @@ function TeamMemberItem({ name, position, style }) {
   );
 }
 
-const ITEM_HEIGHT = 230;
-const ITEM_WIDTH = 190;
-
 export class TeamSection extends Component {
   static propTypes = {
     openModal: PropTypes.func.isRequired
   }
 
   state = {
-    teamMembers: []
+    teamMembers: [],
+    translateValue: 0,
+    currentIndex: 0
   }
-
-  scrollContainer = React.createRef();
 
   constructor(props) {
     super(props);
-    this.scrollLeft = this.scrollLeft.bind(this);
-    this.scrollRight = this.scrollRight.bind(this);
+    this.goToPrevSlide = this.goToPrevSlide.bind(this);
+    this.goToNextSlide = this.goToNextSlide.bind(this);
+    this.slideWidth = this.slideWidth.bind(this);
   }
 
   componentDidMount() {
     this.setState({ teamMembers })
   }
 
-  scrollLeft() {
-    if (this.scrollContainer.current) {
-      horizontalScroll(this.scrollContainer.current, -ITEM_WIDTH * 15, 550);
-    }
+  slideWidth() {
+    const elem = document.querySelector('.slide-team');
+    return elem.clientWidth + 20;
   }
 
-  scrollRight() {
-    if (this.scrollContainer.current) {
-      horizontalScroll(this.scrollContainer.current, ITEM_WIDTH * 15, 550);
-    }
+  goToPrevSlide() {
+    if (this.state.currentIndex === 0) return;
+    this.setState(prevState => ({
+      currentIndex: prevState.currentIndex - 1,
+      translateValue: prevState.translateValue + this.slideWidth()
+    }))
+  }
+
+  goToNextSlide() {
+    const { currentIndex, teamMembers } = this.state;
+    if (currentIndex === teamMembers.length - 1) return;
+    this.setState(prevState => ({
+      currentIndex: prevState.currentIndex + 1,
+      translateValue: prevState.translateValue + -(this.slideWidth())
+    }));
   }
 
   render() {
@@ -73,25 +80,28 @@ export class TeamSection extends Component {
           </p>
         </div>
 
-        <div className="section-talents-items" ref={this.scrollContainer}>
+        <div className="slider">
           {
             teamMembers.map((p, i) =>
               <TeamMemberItem
                 key={i}
-                style={{ height: ITEM_HEIGHT + 'px', width: ITEM_WIDTH + 'px' }}
                 name={p.name}
                 position={p.position}
+                style={{
+                  transform: `translateX(${this.state.translateValue}px)`,
+                  transition: 'transform ease-out 0.45s'
+                }}
               />
             )
           }
         </div>
 
         <div className="nav-buttons-container">
-          <a className="button-circle" onClick={this.scrollLeft}>
+          <a className="button-circle" onClick={this.goToPrevSlide}>
             <div className="left-arrow"></div>
           </a>
 
-          <a className="button-circle" onClick={this.scrollRight}>
+          <a className="button-circle" onClick={this.goToNextSlide}>
             <div className="right-arrow"></div>
           </a>
         </div>

@@ -10,6 +10,8 @@ import { ContactUsSection } from './components/ContactUsSection';
 import { FooterSection } from './components/FooterSection';
 import { JoinNowPopup } from './components/JoinNowPopup';
 
+import './slider.css';
+
 class App extends Component {
 
   state = {
@@ -36,6 +38,7 @@ class App extends Component {
 
     return (
       <div className="app-container">
+
         <Modal
           isOpen={modalIsOpen}
           onRequestClose={this.closeModal}

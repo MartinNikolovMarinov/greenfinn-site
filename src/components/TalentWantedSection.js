@@ -1,14 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { horizontalScroll } from '../utils/horizontalScroll';
 import listedPositions from '../data/listed-positions.json';
 import positionTypes from '../utils/positionTypes';
 import companyInfo from '../data/company-info.json';
 
 function TalentsItem({ positionTitle, description, style, openModal }) {
   return (
-    <div className="talents-item" style={style}>
+    <div className="slide-talent-wanted talents-item" style={style}>
       <div className="talents-item-shell">
         <h4>{`< ${positionTitle} >`}</h4>
         <p>{description}</p>
@@ -23,41 +22,56 @@ function TalentsItem({ positionTitle, description, style, openModal }) {
   );
 }
 
-const ITEM_HEIGHT = 230;
-const ITEM_WIDTH = 300;
-
 export class TalentWantedSection extends Component {
 
   static propTypes = {
-    openModal: PropTypes.func.isRequired
+    openModal: PropTypes.func.isRequired,
   }
 
   state = {
-    listedPositions: []
+    listedPositions: [],
+    translateValue: 0,
+    currentIndex: 0
   }
 
   scrollContainer = React.createRef();
 
   constructor(props) {
     super(props);
-    this.scrollLeft = this.scrollLeft.bind(this);
-    this.scrollRight = this.scrollRight.bind(this);
+    this.goToPrevSlide = this.goToPrevSlide.bind(this);
+    this.goToNextSlide = this.goToNextSlide.bind(this);
+    this.slideWidth = this.slideWidth.bind(this);
   }
 
   componentDidMount() {
     this.setState({ listedPositions })
   }
 
-  scrollLeft() {
-    if (this.scrollContainer.current) {
-      horizontalScroll(this.scrollContainer.current, -ITEM_WIDTH * 15, 550);
-    }
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.scrollLeft) this.goToPrevSlide();
+    if (nextProps.scrollRight) this.goToNextSlide();
   }
 
-  scrollRight() {
-    if (this.scrollContainer.current) {
-      horizontalScroll(this.scrollContainer.current, ITEM_WIDTH * 15, 550);
-    }
+  slideWidth() {
+    const elem = document.querySelector('.slide-talent-wanted');
+    return elem.clientWidth + 20;
+  }
+
+  goToPrevSlide() {
+    if (this.state.currentIndex === 0) return;
+    this.setState(prevState => ({
+      currentIndex: prevState.currentIndex - 1,
+      translateValue: prevState.translateValue + this.slideWidth()
+    }))
+  }
+
+  goToNextSlide() {
+    const { currentIndex, listedPositions } = this.state;
+    if (currentIndex === listedPositions.length - 1) return;
+    this.setState(prevState => ({
+      currentIndex: prevState.currentIndex + 1,
+      translateValue: prevState.translateValue + -(this.slideWidth())
+    }));
   }
 
   render() {
@@ -79,26 +93,29 @@ export class TalentWantedSection extends Component {
           </p>
         </div>
 
-        <div className="section-talents-items" ref={this.scrollContainer}>
+        <div className="slider">
           {
             listedPositions.map((p, i) =>
               <TalentsItem
                 key={i}
-                style={{ height: ITEM_HEIGHT + 'px', width: ITEM_WIDTH + 'px' }}
                 positionTitle={p.positionTitle}
                 description={p.description}
                 openModal={this.props.openModal}
+                style={{
+                  transform: `translateX(${this.state.translateValue}px)`,
+                  transition: 'transform ease-out 0.45s'
+                }}
               />
             )
           }
         </div>
 
         <div className="nav-buttons-container">
-          <a className="button-circle" onClick={this.scrollLeft}>
+          <a className="button-circle" onClick={this.goToPrevSlide}>
             <div className="left-arrow"></div>
           </a>
 
-          <a className="button-circle" onClick={this.scrollRight}>
+          <a className="button-circle" onClick={this.goToNextSlide}>
             <div className="right-arrow"></div>
           </a>
         </div>
