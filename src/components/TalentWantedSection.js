@@ -1,14 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Slider } from './Slider';
 import listedPositions from '../data/listed-positions.json';
 import positionTypes from '../utils/positionTypes';
 import companyInfo from '../data/company-info.json';
 
 function TalentsItem({ positionTitle, description, style, openModal }) {
   return (
-    <div className="slide talents-item" style={style}>
+    <div className="slide-talent-wanted talents-item" style={style}>
       <div className="talents-item-shell">
         <h4>{`< ${positionTitle} >`}</h4>
         <p>{description}</p>
@@ -31,37 +30,52 @@ export class TalentWantedSection extends Component {
 
   state = {
     listedPositions: [],
-    scrollLeft: false,
-    scrollRight: false,
+    translateValue: 0,
+    currentIndex: 0
   }
 
   scrollContainer = React.createRef();
 
   constructor(props) {
     super(props);
-    this.scrollLeft = this.scrollLeft.bind(this);
-    this.scrollRight = this.scrollRight.bind(this);
-    this.scrollFinished = this.scrollFinished.bind(this);
+    this.goToPrevSlide = this.goToPrevSlide.bind(this);
+    this.goToNextSlide = this.goToNextSlide.bind(this);
+    this.slideWidth = this.slideWidth.bind(this);
   }
 
   componentDidMount() {
     this.setState({ listedPositions })
   }
 
-  scrollLeft() {
-    this.setState({ scrollLeft: true })
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.scrollLeft) this.goToPrevSlide();
+    if (nextProps.scrollRight) this.goToNextSlide();
   }
 
-  scrollRight() {
-    this.setState({ scrollRight: true })
+  slideWidth() {
+    const elem = document.querySelector('.slide-talent-wanted');
+    return elem.clientWidth + 20;
   }
 
-  scrollFinished() {
-    this.setState({ scrollRight: false, scrollLeft: false })
+  goToPrevSlide() {
+    if (this.state.currentIndex === 0) return;
+    this.setState(prevState => ({
+      currentIndex: prevState.currentIndex - 1,
+      translateValue: prevState.translateValue + this.slideWidth()
+    }))
+  }
+
+  goToNextSlide() {
+    const { currentIndex, listedPositions } = this.state;
+    if (currentIndex === listedPositions.length - 1) return;
+    this.setState(prevState => ({
+      currentIndex: prevState.currentIndex + 1,
+      translateValue: prevState.translateValue + -(this.slideWidth())
+    }));
   }
 
   render() {
-    const { listedPositions, scrollLeft, scrollRight } = this.state;
+    const { listedPositions } = this.state;
 
     return (
       <section className="section-talents-wanted" id="talents-wanted-section">
@@ -79,7 +93,7 @@ export class TalentWantedSection extends Component {
           </p>
         </div>
 
-        <Slider scrollLeft={scrollLeft} scrollRight={scrollRight} scrollFinished={this.scrollFinished}>
+        <div className="slider">
           {
             listedPositions.map((p, i) =>
               <TalentsItem
@@ -87,17 +101,21 @@ export class TalentWantedSection extends Component {
                 positionTitle={p.positionTitle}
                 description={p.description}
                 openModal={this.props.openModal}
+                style={{
+                  transform: `translateX(${this.state.translateValue}px)`,
+                  transition: 'transform ease-out 0.45s'
+                }}
               />
             )
           }
-        </Slider>
+        </div>
 
         <div className="nav-buttons-container">
-          <a className="button-circle" onClick={this.scrollLeft}>
+          <a className="button-circle" onClick={this.goToPrevSlide}>
             <div className="left-arrow"></div>
           </a>
 
-          <a className="button-circle" onClick={this.scrollRight}>
+          <a className="button-circle" onClick={this.goToNextSlide}>
             <div className="right-arrow"></div>
           </a>
         </div>
