@@ -8,7 +8,7 @@ import companyInfo from '../data/company-info.json';
 function TeamMemberItem({ name, position, style }) {
   return (
     <div className="slide-team talents-item" style={style}>
-      <div className="talents-item-shell">
+      <div className="talents-item-shell team">
         <img alt="" src={Girl} />
         <h4>{name}</h4>
         <p>{position}</p>

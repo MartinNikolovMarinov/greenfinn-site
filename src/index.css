@@ -162,7 +162,7 @@ ul { list-style-type: none; }
 
 /* SECTION OUR TEAM */
 .section-talents-shell p.team-sub-title { width: 620px; margin-bottom: 50px; }
-.talents-item-shell.team img { width: 132px; height: 132px; }
+.talents-item-shell.team img { width: 132px; height: 132px; margin: auto; }
 .talents-item-shell.team h4 { font-weight: 500; margin: 10px auto 0 auto; }
 .talents-item-shell.team p { margin: 0; font-size: 18px; }
 .talents-item.team { padding: 30px 70px; }
