@@ -11,6 +11,7 @@ import { FooterSection } from './components/FooterSection';
 import { JoinNowPopup } from './components/JoinNowPopup';
 
 import './styles/slider.css';
+import './styles/fonts.css';
 
 class App extends Component {
 
