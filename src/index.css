@@ -1,5 +1,5 @@
 /* COMMON CSS */
-body { margin: 0; overflow-x: hidden; font-family: Helvetica; }
+body { margin: 0; overflow-x: hidden; font-family: "brandon-grotesque", Helvetica, sans-serif; }
 h1 { font-size: 58px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
 @media(max-width: 500px) {
   h1 { font-size: 3em; }

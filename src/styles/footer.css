@@ -7,7 +7,7 @@
 .section-footer .section-footer-shell .section-footer-list-item { display: flex; flex-direction: column; }
 .section-footer .section-footer-shell .section-footer-list-item h4 { font-weight: 500; }
 .section-footer .section-footer-shell .section-footer-list-item a { margin: 0; margin-bottom: 12px; text-decoration: none; color: black; }
-.section-footer .section-footer-shell .section-footer-list-item:first-child a { color: white; }
+.section-footer .section-footer-shell .section-footer-list-item:first-child a { color: white; font-weight: bold; }
 
 @media(max-width: 900px){
   .section-footer .section-footer-shell { margin: 90px auto 0 auto; text-align: center; }
