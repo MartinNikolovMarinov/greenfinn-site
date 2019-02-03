@@ -2,8 +2,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Girl from '../images/girl_temp.PNG';
-import teamMembers from '../data/team-members.json'
+import teamMembers from '../data/team-members.json';
 import companyInfo from '../data/company-info.json';
+import '../styles/our-team.css';
 
 function TeamMemberItem({ name, position, style }) {
   return (

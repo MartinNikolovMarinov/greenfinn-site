@@ -20,7 +20,7 @@
 .section-header-logo-container:hover { cursor: pointer; }
 
 @media(max-width: 900px) {
-  .section-header img { height: 100%; width: 100%; }
+  .section-header img { width: 100%; }
   .section-header-inner { justify-content: space-between; margin-left: 0; padding: 20px 0px; padding-bottom: 0; }
   .hamburger-menu { display: block; margin: auto 0 auto 30%; }
   .section-header-inner { flex-direction: column; }

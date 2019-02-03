@@ -1,0 +1,16 @@
+.section-talents-shell { margin-bottom: 50px; }
+.talents-item-shell.team img { width: 132px; height: 132px; margin: auto; }
+.talents-item-shell.team h4 { font-weight: 500; margin: 10px auto 0 auto; }
+.talents-item-shell.team p { margin: 0; font-size: 18px; }
+.talents-item.team { padding: 30px 70px; }
+.talents-item-shell.team, .talents-item-shell.team p  { text-align: center; margin: 0 auto; }
+@media(max-width: 400px){
+  .section-talents-shell p.team-sub-title { width: auto; }
+}
+
+.talents-item-shell {
+  padding: 5% 5%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: -1px 13px 20px 0 #f0f2f4;
+}

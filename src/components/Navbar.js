@@ -35,6 +35,14 @@ export class Navbar extends Component {
   }
 
   scrollToTop() {
+    if (this.state.burgerMenuDisabled || !this.state.burgerButtonClicked) {
+      scroll.scrollToTop();
+      return;
+    }
+
+    this.setState((state) => {
+      return { burgerButtonClicked: false };
+    });
     scroll.scrollToTop();
   }
 

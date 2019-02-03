@@ -2,12 +2,13 @@
 .section-home-shell { max-width: 960px; width: 100%; margin: 12% auto; padding-left: 6%; }
 .section-home-shell-inner { display: flex; flex-direction: column; }
 .section-home-shell h1 { text-align: left; }
+.section-home-shell p { max-width: 400px; }
 
 @media(max-width: 500px) {
   .section-home-shell { margin: 65% 0 15% 0; padding-left: 0px; }
   .section-home { height: auto; background-position: top; }
   .section-home-shell h1 { text-align: center; margin: 0 auto; }
-  .section-home-shell p { font-size: 0.8em; text-align: center; margin: 2% 5% 11% 5%; }
+  .section-home-shell p { text-align: center; margin: 2% 5% 11% 5%; }
   .section-home-shell .button {
     display: block;
     width: 90%;
@@ -15,5 +16,6 @@
     font-weight: bold;
     margin: 0 5%;
     padding-left: 0px;
+    font-size: 20px;
   }
 }
