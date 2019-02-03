@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import listedPositions from '../data/listed-positions.json';
 import positionTypes from '../utils/positionTypes';
 import companyInfo from '../data/company-info.json';
+import '../styles/talents-wanted.css';
 
 function TalentsItem({ positionTitle, description, style, openModal }) {
   return (

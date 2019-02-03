@@ -4,6 +4,8 @@ import companyInfo from '../data/company-info.json';
 import LogoHorizontal from '../images/logo-horizontal.png';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
+import '../styles/navbar.css';
+
 export class Navbar extends Component {
 
   static propTypes = {
@@ -22,7 +24,7 @@ export class Navbar extends Component {
   }
 
   componentDidMount() {
-    const mediaQuery = window.matchMedia('(min-width: 450px)');
+    const mediaQuery = window.matchMedia('(min-width: 900px)');
     const mediaQueryCallback = (changed) => {
       if (changed.matches) this.setState({ burgerMenuDisabled: true, burgerButtonClicked: true });
       else this.setState({ burgerMenuDisabled: false, burgerButtonClicked: false });
@@ -110,9 +112,9 @@ export class Navbar extends Component {
                   </Link>
               </li>
 
-              <li className="nav-item button" >
+              <li className="nav-item" >
                 <a
-                  className="nav-join-us-a"
+                  className="nav-join-us-a button"
                   href={`mailto:${companyInfo.email}?Subject=${companyInfo['email-subjet']}`}
                 >
                   Join our team

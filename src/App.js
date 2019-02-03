@@ -10,7 +10,7 @@ import { ContactUsSection } from './components/ContactUsSection';
 import { FooterSection } from './components/FooterSection';
 import { JoinNowPopup } from './components/JoinNowPopup';
 
-import './slider.css';
+import './styles/slider.css';
 
 class App extends Component {
 

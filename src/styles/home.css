@@ -1,0 +1,9 @@
+.section-home { background-image: url('../images/header.png'); }
+.section-home-shell { max-width: 960px; width: 100%; margin: 12% auto; padding-left: 6%; }
+.section-home-shell-inner { display: flex; flex-direction: column; }
+.section-home-shell h1 { text-align: left; }
+
+@media(max-width: 600px){
+  .section-home-shell { margin: 90px 2% 15% 2%; padding-left: 0px; }
+  .section-home { height: auto; background-position: top; }
+}

@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import companyInfo from '../data/company-info.json';
+import '../styles/home.css';
 
 export class HomeSection extends Component {
   static propTypes = {
@@ -13,7 +14,7 @@ export class HomeSection extends Component {
       <section className="section-home">
         <div className="section-home-shell">
           <div className="section-home-shell-inner">
-            <h1>The next generation of robotics</h1>
+            <h1>The next <br/> generation of <br/> robotics</h1>
 
             <p>
               <span>Reinvent,</span>

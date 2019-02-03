@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import IconCPU from '../images/icon-cpu.png';
 import IconLabStyle from '../images/icon-labstyle.png';
 import IconTeam from '../images/icon-team.png';
+import '../styles/how-we-work.css';
 
 export class HowWeWorkSection extends Component {
   render() {

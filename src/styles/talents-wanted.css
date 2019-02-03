@@ -1,0 +1,45 @@
+/* SECTION TALENTS WANTED */
+.section-talents-wanted { display: flex; flex-direction: column; margin-bottom: 15%; }
+.section-talents-shell { margin: 0 auto; text-align: center; }
+.section-talents-wanted h2 { margin-bottom: 10px; }
+.section-talents-items {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 960px;
+  height: 300px;
+}
+.talents-item {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+.talents-item p {
+  width: auto;
+  font-size: 14px;
+  text-align: left;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.section-talents-items .talents-item img { height: 10px; vertical-align: middle; padding-left: 8px; }
+.section-talents-wanted .nav-buttons-container {
+  display: flex;
+  flex-direction: row;
+  margin: 40px auto 60px auto;
+}
+.talents-item-shell {
+  padding: 40px 10px 0px 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: -1px 13px 20px 0 #f0f2f4;
+}
+
+@media(max-width: 500px) {
+  .section-talents-wanted h2 { font-size: 24px; }
+  .section-talents-shell { margin: 0; }
+  .section-talents-shell p { font-size: 16px; width: auto; padding: 0 10px; }
+  .section-talents-items { width: 320px; }
+  .section-talents-wanted .nav-buttons-container { margin: auto; }
+}

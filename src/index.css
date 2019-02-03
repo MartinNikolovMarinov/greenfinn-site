@@ -1,10 +1,10 @@
 /* COMMON CSS */
 body { margin: 0; overflow-x: hidden; font-family: Helvetica; }
 h1 { font-size: 58px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
-@media(max-width: 400px) {
-  h1 { font-size: 24px; }
-  h2 { font-size: 20px; }
-  h4 { font-size: 16px }
+@media(max-width: 500px) {
+  h1 { font-size: 2.1em; }
+  h2 { font-size: 1.9em; }
+  h4 { font-size: 1.7em; }
 }
 h2 { font-size: 46px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
 h4 { font-size: 18px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #1cd667 }
@@ -25,144 +25,37 @@ ul { list-style-type: none; }
 .button.no-background:hover { background-color: #1cd667; color: white; }
 .button.no-background:hover > .right-arrow { border-color: white; }
 
-.button-circle { background-color: white; text-decoration: none; box-shadow: 3px 3px 7px 0 #c5c5c5; width: 55px; height: 55px; border-radius: 100%; text-align: center; cursor: pointer; }
-.button-circle:hover { background-color: #1ad565; }
-.button-circle:hover > .left-arrow { border-color: white; }
-.button-circle:hover > .right-arrow { border-color: white; }
+.button-circle {
+  background-color: #1ad565;
+  text-decoration: none;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 10px;
+}
+.button-circle:hover { background-color: white; box-shadow: 3px 3px 7px 0 #c5c5c5; }
+.button-circle > .left-arrow { border-color: white; }
+.button-circle:hover > .left-arrow { border-color: #1ad565; }
+.button-circle > .right-arrow { border-color: white; }
+.button-circle:hover > .right-arrow { border-color: #1ad565; }
 .button-circle img { height: 32px; width: 32px; margin-top: 10px; }
 @media(max-width: 400px){
-  .button-circle { margin: 0 4px; }
+  .button-circle { margin: 0 5px; }
 }
-
-@media(min-width: 500px){
-  .button-circle { margin: 0 10px; }
-}
-
 
 .btn-join-our-team { color: #1cd667; text-decoration: none; font-weight: 600; cursor: pointer; }
 .btn-join-our-team:hover { text-decoration: underline }
 
 .app-container { max-width: 100%; max-height: 100%; background-color: white; display: flex; flex-direction: column; }
 
-.hamburger-menu { display: none; }
-
-.hamburger-menu div {
-  width: 28px;
-  height: 4px;
-  background-color: #1cd667;
-  margin: 6px 0;
-}
-
-/* SECTION HEADER */
-.section-header { width: 100%; height: 90px; background-color: white; position: fixed; font-size: 1em; color: #9a9a9a; letter-spacing: 1px; z-index: 1;}
-.section-header-inner { display: flex; flex-direction: row; }
-.section-header-nav { list-style-type: none; display: flex; flex-direction: row; padding-right: 70px; margin: 0; }
-.section-header-nav .nav-item { padding: 12px; margin-left: 10px; text-align: center; position: relative; }
-.section-header-nav .nav-item .nav-join-us-a { text-decoration: none; color: white; }
-.section-header-nav .nav-item:nth-child(3) { margin-right: 14px; }
-.section-header img { max-width: 200px; }
-.section-header-nav .nav-item:hover { cursor: pointer; }
-.section-header-burger-container { display: flex; flex-direction: row; }
-.section-header-logo-container { height: 40px; width: 100%; max-width: 320px; padding: 2%; }
-.section-header-logo-container:hover { cursor: pointer; }
-
-@media(max-width: 450px){
-  .section-header { height: auto; }
-  .section-header img { height: 60%; }
-  .section-header-inner { justify-content: space-between; width: 85%; margin-left: 0; padding: 20px; padding-bottom: 0; }
-  .hamburger-menu { display: block; }
-  .section-header-inner { flex-direction: column; }
-  .section-header-nav { flex-direction: column; margin: 0; padding: 0; padding-right: 0}
-  .section-header-nav .button { width: 100%;}
-  .section-header-nav .nav-item { margin-left: 0; }
-}
-
-@media(min-width: 500px){
-  .section-header-inner { justify-content: space-evenly; width: 100%; max-width: 960px; margin: 0 auto; padding: 26px; }
-}
-
-/* SECTION HOME PAGE */
-.section-home { background-image: url('./images/header.png'); }
 .section-home, .section-how-we-work, .section-contact-us {
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
-  height: 740px;
   background-position: center;
 }
-@media(max-width: 400px){
-  .section-home { height: 450px; }
-  .section-home-shell-inner { width: 330px; margin-top: -104px; }
-  .section-home-shell-inner p { width: 306px; font-size: 16px; }
-  .section-home-shell-inner h1 { margin-bottom: 90px; }
-}
-@media(min-width: 500px){
-  .section-home-shell-inner p { margin-top: 0; width: 470px; }
-  .section-home-shell h1 { margin-bottom: 26px; }
-}
-.section-home-shell { max-width: 960px; width: 100%; margin: 200px auto; padding-left: 6%; }
-.section-home-shell-inner { display: flex; flex-direction: column; }
-.section-home-shell h1 { text-align: left; }
-
-/* SECTION TALENTS WANTED */
-.section-talents-wanted { display: flex; flex-direction: column; }
-.section-talents-shell { margin: 0 auto; text-align: center; }
-.section-talents-wanted h2 { margin-bottom: 10px; }
-/* .section-talents-wanted p { width: 590px; } */
-.section-talents-items {
-  display: flex;
-  flex-direction: row;
-  margin: 10px auto;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  width: 960px;
-  height: 300px;
-}
-.talents-item {
-  flex: 0 0 auto;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: -1px 13px 20px 0 #f0f2f4;
-  padding: 40px 10px 0px 30px;
-  margin-right: 20px;
-}
-.talents-item p { width: auto; font-size: 14px; text-align: left; line-height: 26px; margin-bottom: 20px; }
-.section-talents-items .talents-item img { height: 10px; vertical-align: middle; padding-left: 8px; }
-.section-talents-wanted .nav-buttons-container { display: flex; flex-direction: row; margin: 40px auto 60px auto; }
-@media(max-width: 400px) {
-  .section-talents-wanted h2 { font-size: 24px; }
-  .section-talents-shell { margin: 0; }
-  .section-talents-shell p { font-size: 16px; width: auto; padding: 0 10px; }
-  .section-talents-items { width: 320px; }
-  .section-talents-wanted .nav-buttons-container { margin: 0px auto 40px auto; }
-}
-
-
-/* SECTION HOW WE WORK */
-.section-how-we-work { background-image: url('./images/how-we-work.png'); }
-.section-how-we-work-shell { display: flex; flex-direction: column; max-width: 960px; width: 100%; color: white; text-align: center; margin: 140px auto; letter-spacing: 2px; }
-.section-how-we-work-shell .how-we-work-content { display: flex; flex-direction: row; justify-content: space-between; margin-top: 80px; }
-.how-we-work-content .content .content-icon-container img { width: 70px; height: 70px; }
-.how-we-work-content .content.lab-style h4 { padding: 0 90px; }
-.lato-font { font-family: Helvetica; }
-@media(max-width: 400px){
-  .section-how-we-work { background-position: unset; height: auto; }
-  .section-how-we-work-shell { margin: 0; }
-  .section-how-we-work-shell h2 { font-size: 16px; margin-bottom: 6px; }
-  .section-how-we-work-shell h4 { font-size: 9px; margin: 0; }
-  .section-how-we-work-shell .how-we-work-content { margin-top: 0px; }
-  .how-we-work-content { padding: 0 12px; }
-  .how-we-work-content .content { width: 100px; }
-  .how-we-work-content .content .content-icon-container img { width: 40px; height: 40px; }
-  .lato-font { letter-spacing: 1px; font-size: 12px; line-height: unset; }
-  .how-we-work-content .content.lab-style h4 { padding: 0; }
-  .how-we-work-content .content .content-info p { font-size: 10px; }
-}
-@media(min-width: 500px){
-  .section-how-we-work-shell .how-we-work-content .content { width: 300px; }
-}
-
 
 /* SECTION OUR TEAM */
 .section-talents-shell p.team-sub-title { width: 620px; margin-bottom: 50px; }
@@ -187,7 +80,7 @@ ul { list-style-type: none; }
 .section-contact-us .rectangle .rectangle-shell .contact-us-list .contact-us-list-item { width: 150px; height: 120px; text-align: left; }
 .section-contact-us .rectangle .rectangle-shell .contact-us-list .contact-us-list-item p { font-size: 16px; }
 .section-contact-us .rectangle .rectangle-shell .contact-us-list h4 { font-weight: 500; }
-@media(max-width: 400px){
+@media(max-width: 1000px){
   .section-contact-us { background-position: unset; }
   .section-contact-us-shell { padding-top: 21px; }
   .contact-us-shell { margin-top: 76px; }
