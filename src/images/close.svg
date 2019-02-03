@@ -6,7 +6,7 @@
 		</clipPath>
 	</defs>
 	<g clip-path="url(#clip_0)">
-		<path fill="none" stroke="rgb(151,151,151)" stroke-width="3" stroke-miterlimit="4" d="M24 0L0 24"/>
+		<path fill="none" stroke="#1cd667" stroke-width="3" stroke-miterlimit="4" d="M24 0L0 24"/>
 	</g>
 	<defs>
 		<clipPath id="clip_1">
@@ -14,6 +14,6 @@
 		</clipPath>
 	</defs>
 	<g clip-path="url(#clip_1)">
-		<path fill="none" stroke="rgb(151,151,151)" stroke-width="3" stroke-miterlimit="4" transform="translate(24 0)" d="M2.86197e-07 24L-24 2.86197e-07"/>
+		<path fill="none" stroke="#1cd667" stroke-width="3" stroke-miterlimit="4" transform="translate(24 0)" d="M2.86197e-07 24L-24 2.86197e-07"/>
 	</g>
 </svg>

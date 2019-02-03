@@ -91,9 +91,9 @@ export class JoinNowPopup extends Component {
         <div className="pop-up-shell-outer">
           <div className="pop-up-shell">
             <div className="pop-up-header">
-              <img alt="" src={Logo} />
+              <img alt="" src={Logo} className="logo-popup" />
               <a onClick={this.props.closeModal} className="pop-up-close-btn">
-                <img src={CloseIcon} alt="close icon" />
+                <img src={CloseIcon} alt="close icon" className="close-icon" />
               </a>
             </div>
 

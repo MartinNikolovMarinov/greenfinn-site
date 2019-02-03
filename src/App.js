@@ -12,6 +12,7 @@ import { JoinNowPopup } from './components/JoinNowPopup';
 
 import './styles/slider.css';
 import './styles/fonts.css';
+import './styles/popup.css';
 
 class App extends Component {
 

@@ -21,7 +21,7 @@
 
 @media(max-width: 900px) {
   .section-header img { width: 100%; }
-  .section-header-inner { justify-content: space-between; margin-left: 0; padding: 20px 0px; padding-bottom: 0; }
+  .section-header-inner { justify-content: space-evenly; margin-left: 0; padding: 20px 0px; padding-bottom: 0; }
   .hamburger-menu { display: block; margin: auto 0 auto 30%; }
   .section-header-inner { flex-direction: column; }
   .section-header-nav { flex-direction: column; margin-top: 3%; padding: 0; padding-right: 0; background: white;}
@@ -32,7 +32,7 @@
 
 @media(min-width: 900px) {
   .section-header-inner {
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
