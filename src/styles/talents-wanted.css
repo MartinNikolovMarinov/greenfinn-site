@@ -27,7 +27,7 @@
 .section-talents-wanted .nav-buttons-container {
   display: flex;
   flex-direction: row;
-  margin: 40px auto 60px auto;
+  margin: 0 auto;
 }
 .talents-item-shell {
   padding: 5% 5%;
