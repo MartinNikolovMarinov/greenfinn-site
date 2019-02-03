@@ -4,6 +4,7 @@ import IconLabStyle from '../images/icon-labstyle.png';
 import IconTeam from '../images/icon-team.png';
 import '../styles/how-we-work.css';
 
+
 export class HowWeWorkSection extends Component {
   render() {
     return (
@@ -12,7 +13,6 @@ export class HowWeWorkSection extends Component {
           <h2>How we work</h2>
 
           <div className="how-we-work-content">
-
             <div className="content technologies">
               <div className="content-icon-container">
                 <img alt="" src={IconCPU} />
@@ -59,7 +59,7 @@ export class HowWeWorkSection extends Component {
               </div>
 
               <div className="content-info">
-                <p className="lato-font"> We can only accomplish the unusual with teams that work together
+                <p> We can only accomplish the unusual with teams that work together
                   We work, were it is good to work, in the lab, on field trips, at home </p>
               </div>
             </div>

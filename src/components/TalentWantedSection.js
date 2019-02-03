@@ -92,7 +92,7 @@ export class TalentWantedSection extends Component {
             <a
               className="btn-join-our-team"
               href={`mailto:${companyInfo.email}?Subject=${companyInfo['email-subjet']}`}
-            >
+            >&nbsp;
               Join our Team.
             </a>
           </p>

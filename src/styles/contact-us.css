@@ -11,13 +11,12 @@
 .section-contact-us .rectangle .rectangle-shell .contact-us-list h4 { font-weight: 500; }
 
 @media(max-width: 900px){
-  .section-contact-us { background-position: unset; }
+  .section-contact-us { background-image: none; }
   .section-contact-us-shell { padding-top: 21px; }
-  .contact-us-shell { margin-top: 76px; }
   .section-contact-us .rectangle .rectangle-shell .contact-us-list { display: flex; flex-direction: column; }
-  .section-contact-us .rectangle .rectangle-shell h2 { font-size: 18px; }
-  .section-contact-us .rectangle .rectangle-shell .contact-us-list .contact-us-list-item { width: auto; height: auto; text-align: center; }
+  .section-contact-us .rectangle .rectangle-shell { padding: 0; }
+  .section-contact-us .rectangle .rectangle-shell .contact-us-list .contact-us-list-item { width: auto; height: auto; text-align: center; margin: 0 auto 6% auto; }
   .section-contact-us .rectangle .rectangle-shell .contact-us-list h4 { margin-bottom: 0; }
-  .section-contact-us .rectangle { margin: 0 auto; width: 300px; height: 102px; }
-  .section-contact-us .triangle-topleft { border-top: 45px solid white; border-right: 26px solid transparent; margin-left: 120px; }
+  .section-contact-us .rectangle { width: 300px; height: auto; background-color: none; border-radius: none; margin: 0 auto; }
+  .section-contact-us .triangle-topleft { display: none; }
 }

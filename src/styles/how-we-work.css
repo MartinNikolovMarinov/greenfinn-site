@@ -1,23 +1,20 @@
 
 .section-how-we-work { background-image: url('../images/how-we-work.png'); }
 .section-how-we-work-shell { display: flex; flex-direction: column; max-width: 960px; width: 100%; color: white; text-align: center; margin: 140px auto; letter-spacing: 2px; }
-.section-how-we-work-shell .how-we-work-content { display: flex; flex-direction: row; justify-content: space-between; margin-top: 80px; }
+.section-how-we-work-shell .how-we-work-content { display: flex; flex-direction: row; justify-content: space-between; margin-top: 80px; font-size: 0.8em; }
+.how-we-work-content .content { width: 30%; }
 .how-we-work-content .content .content-icon-container img { width: 70px; height: 70px; }
 .how-we-work-content .content.lab-style h4 { padding: 0 90px; }
-.lato-font { font-family: Helvetica; }
-@media(max-width: 400px){
-  .section-how-we-work { background-position: unset; height: auto; }
+.mobile-background { display: none; }
+
+@media(max-width: 800px){
+  .section-how-we-work { background-image: url('../images/mobile-v.png'); margin-bottom: 8%; }
   .section-how-we-work-shell { margin: 0; }
-  .section-how-we-work-shell h2 { font-size: 16px; margin-bottom: 6px; }
-  .section-how-we-work-shell h4 { font-size: 9px; margin: 0; }
-  .section-how-we-work-shell .how-we-work-content { margin-top: 0px; }
-  .how-we-work-content { padding: 0 12px; }
-  .how-we-work-content .content { width: 100px; }
-  .how-we-work-content .content .content-icon-container img { width: 40px; height: 40px; }
-  .lato-font { letter-spacing: 1px; font-size: 12px; line-height: unset; }
+  .section-how-we-work-shell h2 { display: none; }
+  .section-how-we-work-shell h4 { font-size: 12px; margin: 0; }
+  .section-how-we-work-shell .how-we-work-content { flex-direction: column; display: block; padding: 0 12px; margin: 10% 0; }
+  .how-we-work-content .content { width: 50%; margin: 0 auto; }
+  .how-we-work-content .content .content-icon-container img { width: 50px; height: 50px; }
   .how-we-work-content .content.lab-style h4 { padding: 0; }
-  .how-we-work-content .content .content-info p { font-size: 10px; }
-}
-@media(min-width: 500px){
-  .section-how-we-work-shell .how-we-work-content .content { width: 300px; }
+  .how-we-work-content .content .content-info p { font-size: 14px; }
 }

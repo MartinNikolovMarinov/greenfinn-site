@@ -1,5 +1,5 @@
 /* SECTION TALENTS WANTED */
-.section-talents-wanted { display: flex; flex-direction: column; margin-bottom: 15%; }
+.section-talents-wanted { display: flex; flex-direction: column; margin-bottom: 8%; }
 .section-talents-shell { margin: 0 auto; text-align: center; max-width: 580px; }
 .section-talents-wanted h2 { margin-bottom: 10px; }
 .section-talents-items {
