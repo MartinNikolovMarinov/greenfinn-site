@@ -30,7 +30,7 @@
   margin: 40px auto 60px auto;
 }
 .talents-item-shell {
-  padding: 40px 10px 0px 30px;
+  padding: 5% 5%;
   background-color: white;
   border-radius: 5px;
   box-shadow: -1px 13px 20px 0 #f0f2f4;
@@ -44,7 +44,7 @@
     text-align: center;
     width: auto;
     padding: 0 10px;
-    margin: 2% 15% 11% 15%;
+    margin: 2% 5% 11% 5%;
   }
   .section-talents-items { width: 320px; }
   .section-talents-wanted .nav-buttons-container { margin: auto; }

@@ -7,6 +7,10 @@ import companyInfo from '../data/company-info.json';
 import '../styles/talents-wanted.css';
 
 function TalentsItem({ positionTitle, description, style, openModal }) {
+  if (description.length > 100) {
+    description = description.substring(0, 100) + '...';
+  }
+
   return (
     <div className="slide-talent-wanted talents-item" style={style}>
       <div className="talents-item-shell">
