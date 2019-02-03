@@ -2,9 +2,9 @@
 body { margin: 0; overflow-x: hidden; font-family: Helvetica; }
 h1 { font-size: 58px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
 @media(max-width: 500px) {
-  h1 { font-size: 2.1em; }
-  h2 { font-size: 1.9em; }
-  h4 { font-size: 1.7em; }
+  h1 { font-size: 3em; }
+  h2 { font-size: 2.6em; }
+  h4 { font-size: 2.3em; }
 }
 h2 { font-size: 46px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
 h4 { font-size: 18px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #1cd667 }

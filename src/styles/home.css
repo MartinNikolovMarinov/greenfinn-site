@@ -3,7 +3,17 @@
 .section-home-shell-inner { display: flex; flex-direction: column; }
 .section-home-shell h1 { text-align: left; }
 
-@media(max-width: 600px){
-  .section-home-shell { margin: 90px 2% 15% 2%; padding-left: 0px; }
+@media(max-width: 500px) {
+  .section-home-shell { margin: 65% 0 15% 0; padding-left: 0px; }
   .section-home { height: auto; background-position: top; }
+  .section-home-shell h1 { text-align: center; margin: 0 auto; }
+  .section-home-shell p { font-size: 0.8em; text-align: center; margin: 2% 15% 11% 15%; }
+  .section-home-shell .button {
+    display: block;
+    width: 90%;
+    padding: 5% 0;
+    font-weight: bold;
+    margin: 0 5%;
+    padding-left: 0px;
+  }
 }

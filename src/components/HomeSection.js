@@ -14,7 +14,7 @@ export class HomeSection extends Component {
       <section className="section-home">
         <div className="section-home-shell">
           <div className="section-home-shell-inner">
-            <h1>The next <br/> generation of <br/> robotics</h1>
+            <h1>The next <br/> generation <br/> of robotics</h1>
 
             <p>
               <span>Reinvent,</span>
