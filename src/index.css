@@ -68,46 +68,6 @@ ul { list-style-type: none; }
   .section-talents-shell p.team-sub-title { width: auto; }
 }
 
-
-/* SECTION CONTACT US */
-.section-contact-us { background-image: url('./images/map.png'); }
-.section-contact-us-shell { display: flex; flex-direction: column; margin: auto; max-width: 990px; width: 100%; height: 740px; padding-top: 100px; }
-.section-contact-us .rectangle { width: 990px; height: 380px; background-color: white; border-radius: 5px; }
-.section-contact-us .triangle-topleft { width: 0; height: 0; border-top: 150px solid white; border-right: 100px solid transparent; margin-left: 190px; }
-.section-contact-us .rectangle .rectangle-shell { padding: 50px; text-align: center; display: flex; flex-direction: column; }
-.section-contact-us .rectangle .rectangle-shell h2 { margin-top: 0; }
-.section-contact-us .rectangle .rectangle-shell .contact-us-list { display: flex; flex-direction: row; justify-content: space-around; padding-left: 0; }
-.section-contact-us .rectangle .rectangle-shell .contact-us-list .contact-us-list-item { width: 150px; height: 120px; text-align: left; }
-.section-contact-us .rectangle .rectangle-shell .contact-us-list .contact-us-list-item p { font-size: 16px; }
-.section-contact-us .rectangle .rectangle-shell .contact-us-list h4 { font-weight: 500; }
-@media(max-width: 1000px){
-  .section-contact-us { background-position: unset; }
-  .section-contact-us-shell { padding-top: 21px; }
-  .contact-us-shell { margin-top: 76px; }
-  .section-contact-us .rectangle .rectangle-shell .contact-us-list { display: flex; flex-direction: column; }
-  .section-contact-us .rectangle .rectangle-shell h2 { font-size: 18px; }
-  .section-contact-us .rectangle .rectangle-shell .contact-us-list .contact-us-list-item { width: auto; height: auto; }
-  .section-contact-us .rectangle .rectangle-shell .contact-us-list h4 { margin-bottom: 0; }
-  .section-contact-us .rectangle { margin: 0 auto; width: 300px; height: 102px; }
-  .section-contact-us .triangle-topleft { border-top: 45px solid white; border-right: 26px solid transparent; margin-left: 120px; }
-}
-
-
-/* SECTION FOOTER */
-.section-footer { width: 100%; }
-.section-footer .section-footer-shell { max-width: 960px; width: 100%; margin: 60px auto; }
-.section-footer .section-footer-shell .section-footer-list { display: flex; flex-direction: row; justify-content: space-around; }
-.section-footer .section-footer-shell .section-footer-list img { height: 40px; margin-bottom: 20px; }
-.section-footer .section-footer-shell .section-footer-list-item { display: flex; flex-direction: column; }
-.section-footer .section-footer-shell .section-footer-list-item h4 { font-weight: 500; }
-.section-footer .section-footer-shell .section-footer-list-item a { margin: 0; margin-bottom: 12px; text-decoration: none; color: black; }
-.section-footer .section-footer-shell .section-footer-list-item:first-child a { color: white; }
-@media(max-width: 400px){
-  .section-footer .section-footer-shell { margin: 90px auto; }
-  .section-footer .section-footer-shell .section-footer-list { display: flex; flex-direction: column; }
-  .section-footer .section-footer-shell .section-footer-list img { width: 200px; }
-}
-
 /* POP UP */
 .ReactModal__Overlay.ReactModal__Overlay--after-open { background-color: rgba(192,192,192,0.7) !important; }
 .pop-up { width: 100%; height: 100%; }

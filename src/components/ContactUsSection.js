@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import companyInfo from '../data/company-info.json';
 
+import '../styles/contact-us.css';
+
 export class ContactUsSection extends Component {
   static propTypes = {
     openModal: PropTypes.func.isRequired

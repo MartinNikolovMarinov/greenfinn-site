@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import companyInfo from '../data/company-info.json';
 import Logo from '../images/logo-horizontal.png';
 
+import '../styles/footer.css';
+
 export class FooterSection extends Component {
   static propTypes = {
     openModal: PropTypes.func.isRequired
