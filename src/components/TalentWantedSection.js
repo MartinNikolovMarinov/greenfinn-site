@@ -2,11 +2,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import listedPositions from '../data/listed-positions.json';
-import positionTypes from '../utils/positionTypes';
 import companyInfo from '../data/company-info.json';
 import '../styles/talents-wanted.css';
 
-function TalentsItem({ positionTitle, description, style, openModal }) {
+function TalentsItem({ positionTitle, description, style, openModal, positionId }) {
   if (description.length > 100) {
     description = description.substring(0, 100) + '...';
   }
@@ -18,7 +17,7 @@ function TalentsItem({ positionTitle, description, style, openModal }) {
         <p>{description}</p>
         <a
           className="button no-background"
-          onClick={() => openModal({ positionId: positionTypes.seniorDeveloper })}
+          onClick={() => openModal({ positionId })}
         >
           More info <div className="right-arrow no-margin"></div>
         </a>
@@ -106,6 +105,7 @@ export class TalentWantedSection extends Component {
                 positionTitle={p.positionTitle}
                 description={p.description}
                 openModal={this.props.openModal}
+                positionId={p.positionId}
                 style={{
                   transform: `translateX(${this.state.translateValue}px)`,
                   transition: 'transform ease-out 0.45s'

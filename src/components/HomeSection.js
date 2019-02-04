@@ -1,13 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import companyInfo from '../data/company-info.json';
 import '../styles/home.css';
 
 export class HomeSection extends Component {
-  static propTypes = {
-    openModal: PropTypes.func.isRequired
-  }
 
   render() {
     return (

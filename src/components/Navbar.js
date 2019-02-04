@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import companyInfo from '../data/company-info.json';
 import LogoHorizontal from '../images/logo-horizontal.png';
 import { Link, animateScroll as scroll } from 'react-scroll';
@@ -7,10 +6,6 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 import '../styles/navbar.css';
 
 export class Navbar extends Component {
-
-  static propTypes = {
-    openModal: PropTypes.func.isRequired
-  }
 
   state = {
     burgerButtonClicked: false,

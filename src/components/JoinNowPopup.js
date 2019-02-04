@@ -6,13 +6,20 @@ import CloseIcon from '../images/close.svg';
 import positionDescriptions from '../data/position-descriptions.json';
 import companyInfo from '../data/company-info.json';
 
+function handleBold(line) {
+  if (line.startsWith('{b}')) {
+    return <span className="title-bold">{line.replace('{b}', '')}</span>
+  }
+  return line;
+}
+
 function Description({ lines }) {
   return (
     <p>
       {
         lines.map((line, i) => {
           if (i !== lines.length - 1) {
-            return (<React.Fragment key={i}>{line}<br /></React.Fragment>);
+            return (<React.Fragment key={i}>{handleBold(line)}<br /></React.Fragment>);
           }
           return line;
         })
@@ -21,7 +28,7 @@ function Description({ lines }) {
   )
 }
 
-function Paragraphs({paragraphs}) {
+function Paragraphs({ paragraphs }) {
   return (
     <li>
       {
@@ -49,7 +56,7 @@ function Responsibility({ resp }) {
             {
               list.map((section, i) => {
                 if (section && section.paragraphs) {
-                  return (<Paragraphs paragraphs={section.paragraphs} key={i}/>)
+                  return (<Paragraphs paragraphs={section.paragraphs} key={i} />)
                 }
                 return null;
               })
@@ -113,7 +120,26 @@ export class JoinNowPopup extends Component {
                 responsibilities.length > 0 &&
                 responsibilities.map((resp, i) => <Responsibility resp={resp} key={i} />)
               }
+
+              <p className="title-bold">Our Values</p>
+              <br/>
+              <p className="title-bold">Ecological. Ethical. Profitable - No Less. No More.</p>
+              At Greenfinn Technologies we only develop modern sustainable products that
+              have a positive impact on our planet, and are not harmful for the environment
+              and our health. We behave ethically at all times, creating benefits for our
+              customers and profits for our employees, investors, and owners.
+              <br />
+              <p class="title-bold">We, the people</p>
+              Our passion comes from nature; our inspiration comes from people.
+              <br />
+              <p class="title-bold">Greenfinn gives back</p>
+              We give 1% of our sales revenue to charities.
+              <br />
+              <p class="title-bold">Contact</p>
+              jobs@greenfinn.com
             </div>
+
+            <br />
 
             <a
               href={`mailto:${companyInfo.email}?Subject=${companyInfo['email-subjet']}`}

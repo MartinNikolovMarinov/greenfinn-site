@@ -1,106 +1,424 @@
 {
-  "seniorDeveloper": {
-    "name": "Senior / Developer",
-    "type": "Robotic Position",
+  "fullStackDeveloper": {
+    "name": "Full Stack Developer and UI Engineer",
+    "type": "Developer Position",
     "descriptionLines": [
-      "We are hiring software roboticists who want to do applied robotics, now.",
-      "We build software to do real work. Join our Team."
+      "Location: Sofia, Bulgaria",
+      "Type: Full time",
+      "Experience: Mid level",
+      "",
+      "{b}Greenfinn Technologies",
+      "Greenfinn Technologies’ mission is to free humans from manual labor. We're starting with the hardest first—highly repetitive outdoor work in the food and agriculture industry.",
+      "",
+      "{b}Full Stack Developer and UI Engineer",
+      "We’re looking for a Full Stack Developer and UI Engineer to develop the user experience and backend design of the next generation of robotics. We build hardware and software to do real work. Join our Team.",
+      "",
+      "Our Full Stack Developer and UI Engineer will focus on robot control interfaces, machine learning tools, SAAS backends, and more.",
+      "You’ll work with a multidisciplinary team of robotics experts, software engineers, and industrial designers to design and produce the next generation of advanced robots.",
+      "The ideal will have some prior experience in the design of complex interfaces and API-driven backends."
     ],
     "responsibilities": [
       {
-        "title": "As a Robotics Software Developer, you will:",
+        "title": "As a Full Stack Developer and UI Engineer, you will",
         "list": [
           {
             "paragraphs": [
-              "Develop software for our autonomous indoor and outdoor robotics",
-              "platform using the Robotic Operating System (ROS), Python, C++, and more."
+              "Develop and design user interfaces for advanced robotic control and monitoring;"
             ]
           },
           {
             "paragraphs": [
-              "Code-review, pair-program, and problem solve with teammates"
+              "Build API-driven SAAS backends"
             ]
           },
           {
             "paragraphs": [
-              "Participate in daily stand-ups, weekly sprint planning, retrospectives, and roadmap planning"
+              "Create SAAS software services"
             ]
           },
           {
             "paragraphs": [
-              "Build a great company: it’s up to you how involved you want to be. We are an open book and share",
-              "the experience of building a company from customer discovery to sales to marketing, you can participate and learn all aspects of business."
+              "Build a great company: it’s up to you how involved you want to be. We are an open book and you to share the experience of building a company—from identifying customers, to sales, to marketing. We want you to actively participate in, and learn, all aspects of our business."
             ]
           }
         ]
       },
       {
-        "title": "As a candidate you already:",
+        "title": "As a candidate, you already:",
         "list": [
           {
             "paragraphs": [
-              "Have software development experience and solid engineering practices"
+              "Have an excellent background in software engineering and architecture (front to back);"
             ]
           },
           {
             "paragraphs": [
-              "Have experience with areas in robotics such as: control systems, machine vision,",
-              "obstacle avoidance, SLAM, and/or other robotics algorithms and libraries"
+              "Have some experience in developing software in C++, Python, C#, and JavaScript;"
             ]
           },
           {
             "paragraphs": [
-              "Have used the Robotic Operating System (ROS) and simulation with Gazebo"
+              "Have 3+ years’ experience in using Linux;"
             ]
           },
           {
             "paragraphs": [
-              "Know Python or other high-level scripting languages"
+              "Have good experience in API design and service-oriented architectures;"
             ]
           },
           {
             "paragraphs": [
-              "Know C++ or other lower-level embedded languages"
+              "Have a thorough understanding of software security and authentication;"
             ]
           },
           {
             "paragraphs": [
-              "Have experience with Linux from installation to package management"
-            ]
-          },
-          {
-            "paragraphs": [
-              "Desire to free humans from hard, manual labor"
+              "Wish to free humans from hard, manual labor."
             ]
           }
         ]
       },
       {
-        "title": "You might also (nice-to-have):",
+        "title": "You may also have the following skills/attributes (desirable):",
         "list": [
           {
             "paragraphs": [
-              "Understand machine learning fundamentals and the most common libraries"
+              "You understand robotic design and simulation;"
             ]
           },
           {
             "paragraphs": [
-              "Grow your food on your balcony or a community garden"
+              "You grow your food on your balcony or a community garden;"
             ]
           },
           {
             "paragraphs": [
-              "Have used the Robotic Operating System (ROS) and simulation with Gazebo"
+              "You have experience in machine learning techniques;"
             ]
           },
           {
             "paragraphs": [
-              "Have a customized bash (or zsh) profile and your ssh keys are on at least one other server on the cloud"
+              "You appreciate a results-based, startup culture."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The benefits we offer to full-time employees:",
+        "list": [
+          {
+            "paragraphs": [
+              "A competitive salary;"
             ]
           },
           {
             "paragraphs": [
-              "Appreciate a results-based, startup culture"
+              "Participation in the success of the company;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Personal skill development / a learning culture;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Job satisfaction through involvement in meaningful projects;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "A host of other benefits that we will define as a team;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "A transparent, entrepreneurial, startup culture. Want to be actively involved in sales and marketing? Then come and join us (but be ready to take on real tasks)."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "businessDevelopmentAssociate": {
+    "name": "Business Development Associate",
+    "type": "Business Position",
+    "descriptionLines": [
+      "Location: Sofia, Bulgaria",
+      "Type: Full time",
+      "Experience: Mid level",
+      "",
+      "{b}Greenfinn Technologies",
+      "Greenfinn Technologies’ mission is to free humans from manual labor. We're starting with the hardest first—highly repetitive outdoor work in the food and agriculture industry.",
+      "",
+      "{b}Business Development Associate",
+      "We’re looking for a Business Development Associate to work closely with the CEO on all business development aspects of Greenfinn Technologies. We build new technologies that enable people to grow healthy food across the globe. Join our Team.",
+      "",
+      "Our Business Development Associate will focus on business development, along with market research and management. You’ll work with the CEO and a multidisciplinary team involved with creating the next generation of advanced robots for food production. The ideal candidate will have some prior experience in business development and market research."
+    ],
+    "responsibilities": [
+      {
+        "title": "As a Business Development Associate, you will:",
+        "list": [
+          {
+            "paragraphs": [
+              "Conduct market research and develop an in-depth market understanding;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Create market presentations and analysis;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Work with the CEO on the corporate strategy and funding;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Manage projects and teams;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Build a great company: it’s up to you how involved you want to be. We are an open book and want you to share the experience of building a company—from identifying customers, to sales, to marketing. We want you to actively participate in, and learn all aspects of, our business."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "As a candidate, you already have:",
+        "list": [
+          {
+            "paragraphs": [
+              "A Bachelor's degree in business management, marketing, or a related field;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "1–3 years' relevant work experience in consulting, business development, or a similar field (preferred);"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Good experience in market research;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "A keen interest in creating PowerPoint presentations;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Excellent written and verbal communication skills;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "The ability to handle multiple projects simultaneously and work well under pressure."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "You may also have the following skills/attributes (desirable):",
+        "list": [
+          {
+            "paragraphs": [
+              "You have strong organizational and project management skills;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "You grow your own food on your balcony or in a community garden;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "You have a passion for pleasing graphic design;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "You appreciate a results-based, startup culture."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The benefits we offer to full-time employees:",
+        "list": [
+          {
+            "paragraphs": [
+              "A competitive salary;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Participation in the success of the company;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Personal skill development / a learning culture;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Job satisfaction through involvement in meaningful projects;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "A host of other benefits that we will define as a team;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "A transparent, entrepreneurial, startup culture. Want to be actively involved in sales and marketing? Then come and join us (but be ready to take on real tasks)."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "mechanicalProductDesignEngineer": {
+    "name": "Mechanical Product Design Engineer",
+    "type": "Engineering",
+    "descriptionLines": [
+      "Location: Sofia, Bulgaria",
+      "Type: Full time",
+      "Experience: Mid level",
+      "",
+      "{b}Greenfinn Technologies",
+      "Greenfinn Technologies’ mission is to free humans from manual labor. We're starting with the hardest first—highly repetitive outdoor work in the food and agriculture industry.",
+      "",
+      "{b}Mechanical Product Design Engineer",
+      "We’re looking for a Mechanical Design Engineer to undertake applied robotics and help us to design advanced technologies. We build hardware and software capable of doing real work. Join our Team.",
+      "",
+      "Our Mechanical Engineer will focus on the design of prototypes and marketready products.",
+      "You’ll work with a multidisciplinary team of robotics experts, software engineers, and industrial designers to design and produce the next generation of advanced robots, with an emphasis on bringing proof-of-concept machines to mass production.",
+      "The ideal candidate will have some prior experience in the design, manufacturing, and fielding of 3D product design and simulation in the consumer, industrial, or automotive markets. Experience with electromechanical assemblies would be an advantage."
+    ],
+    "responsibilities": [
+      {
+        "title": "As a Mechanical Product Design Engineer, you will:",
+        "list": [
+          {
+            "paragraphs": [
+              "Develop mechanical design for our autonomous indoor and outdoor robotics platform using 3D CAD software, simulation environments, a robotic operating system (ROS), and more;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Create models, drawings, and specifications for parts and assemblies;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Work with domestic and overseas manufacturing partners to develop manufacturable designs and scalable processes;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Participate in daily stand-ups, weekly sprint planning, retrospectives, and roadmap planning;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Build a great company: it’s up to you how involved you want to be. We are an open book and want you to share the experience of building a company—from identifying customers, to sales, to marketing. We want you to actively participate in, and learn, all aspects of our business."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "As a candidate, you already:",
+        "list": [
+          {
+            "paragraphs": [
+              "Have mechanical design experience and solid engineering practices;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Have some experience in aspects of industrial automation, consumer products or robotics, such as 3D design, simulation of mechanical properties, or motion simulation;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Have used 3D CAD systems to design complex components;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Have experience in working from concept to mass production;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Wish to free humans from hard, manual labor."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "You may also have the following skills/attributes (desirable):",
+        "list": [
+          {
+            "paragraphs": [
+              "You understand robotic design fundamentals and simulations;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "You grow your food on your balcony or a community garden;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "You have experience in rapid prototyping techniques;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "You appreciate a results-based, startup culture."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The benefits we offer to full-time employees:",
+        "list": [
+          {
+            "paragraphs": [
+              "A competitive salary;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Participation in the success of the company;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Personal skill development / a learning culture;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Job satisfaction through involvement in meaningful projects;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "A host of other benefits that we will define as a team;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "A transparent, entrepreneurial, startup culture. Want to be actively involved in sales and marketing? Then come and join us (but be ready to take on real tasks)."
             ]
           }
         ]

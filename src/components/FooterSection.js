@@ -1,15 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import companyInfo from '../data/company-info.json';
 import Logo from '../images/logo-horizontal.png';
 
 import '../styles/footer.css';
 
 export class FooterSection extends Component {
-  static propTypes = {
-    openModal: PropTypes.func.isRequired
-  }
 
   render() {
     return (

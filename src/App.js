@@ -53,13 +53,13 @@ class App extends Component {
           />
         </Modal>
 
-        <Navbar openModal={this.openModal} />
-        <HomeSection openModal={this.openModal} />
+        <Navbar />
+        <HomeSection />
         <TalentWantedSection openModal={this.openModal} />
         <HowWeWorkSection />
-        <TeamSection openModal={this.openModal}/>
-        <ContactUsSection openModal={this.openModal}/>
-        <FooterSection openModal={this.openModal}/>
+        {/* <TeamSection openModal={this.openModal}/> */}
+        <ContactUsSection />
+        <FooterSection />
       </div>
     );
   }
