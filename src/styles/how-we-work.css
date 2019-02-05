@@ -8,7 +8,7 @@
 .mobile-background { display: none; }
 
 @media(max-width: 800px){
-  .section-how-we-work { background-image: url('../images/mobile-v.png'); margin-bottom: 8%; }
+  .section-how-we-work { background-image: url('../images/mobile-v-compressed.jpg'); margin-bottom: 8%; }
   .section-how-we-work-shell { margin: 0; }
   .section-how-we-work-shell h2 { display: none; }
   .section-how-we-work-shell h4 { font-size: 12px; margin: 0; }

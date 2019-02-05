@@ -1,4 +1,4 @@
-.section-home { background-image: url('../images/header.png'); }
+.section-home { background-image: url('../images/header-compressed.jpg'); }
 .section-home-shell { max-width: 960px; width: 100%; margin: 12% auto; }
 .section-home-shell-inner { display: flex; flex-direction: column; }
 .section-home-shell h1 { text-align: left; }
