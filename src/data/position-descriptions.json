@@ -8,7 +8,7 @@
       "Experience: Mid level",
       "",
       "{b}Greenfinn Technologies",
-      "Greenfinn Technologies’ mission is to free humans from manual labor. We're starting with the hardest first—highly repetitive outdoor work in the food and agriculture industry.",
+      "Greenfinn Technologies’ mission is to free humans from manual labor. We're starting with the hardest tasks first—highly repetitive outdoor work in the food and agriculture industry.",
       "",
       "{b}Full Stack Developer and UI Engineer",
       "We’re looking for a Full Stack Developer and UI Engineer to develop the user experience and backend design of the next generation of robotics. We build hardware and software to do real work. Join our Team.",
@@ -379,6 +379,140 @@
           {
             "paragraphs": [
               "You have experience in rapid prototyping techniques;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "You appreciate a results-based, startup culture."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "The benefits we offer to full-time employees:",
+        "list": [
+          {
+            "paragraphs": [
+              "A competitive salary;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Participation in the success of the company;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Personal skill development / a learning culture;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Job satisfaction through involvement in meaningful projects;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "A host of other benefits that we will define as a team;"
+            ]
+          },
+          {
+            "paragraphs": [
+              "A transparent, entrepreneurial, startup culture. Want to be actively involved in sales and marketing? Then come and join us (but be ready to take on real tasks)."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "machineLearningResearchers": {
+    "name": "Machine Learning Researchers",
+    "type": "Machine Learning",
+    "descriptionLines": [
+      "Location: Sofia, Bulgaria",
+      "Type: Full time",
+      "Experience: Junior level",
+      "",
+      "{b}Greenfinn Technologies",
+      "Greenfinn Technologies’ mission is to free humans from manual labor. We're starting with the hardest first—highly repetitive outdoor work in the food and agriculture industry.",
+      "",
+      "{b}Machine Learning Researchers",
+      "We’re are seeking Machine Learning Researchers that are interested in building perception and adaptive control systems that improve the performance, reliability, and generalizability of robot behaviors.",
+      "",
+      "Well-qualified candidates will have a background in Computer Science, or a related field, and have prior work that demonstrates an ability to creatively apply modern machine learning algorithms to real-world problems. We are particularly interested in candidates with 1) experience using ML for visual perception or 2) experience applying reinforcement learning (RL) to dynamic control tasks."
+    ],
+    "responsibilities": [
+      {
+        "title": "As a Machine Learning Researchers, you will:",
+        "list": [
+          {
+            "paragraphs": [
+              "Mapping sensor inputs into a 3D representation of the physical world"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Design of relevant feature sets for data collection and training"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Implement state of the art perception strategies"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Build a great company: it’s up to you how involved you want to be. We are an open book and want you to share the experience of building a company—from identifying customers, to sales, to marketing. We want you to actively participate in, and learn all aspects of, our business."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "As a candidate, you already have:",
+        "list": [
+          {
+            "paragraphs": [
+              "Comfortable writing and debugging C++ and Python Code"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Experience implementing and debugging ML algorithms"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Familiarity with available machine learning toolkits (e.g., Pytorch, Tensorflow)"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "You may also have the following skills/attributes (desirable):",
+        "list": [
+          {
+            "paragraphs": [
+              "Application of machine learning to 3D data sets"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Familiarity with cloud-based API's"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Experience with robot systems and autonomy"
+            ]
+          },
+          {
+            "paragraphs": [
+              "Familiarity with graphics programming"
+            ]
+          },
+          {
+            "paragraphs": [
+              "You grow your own food on your balcony or in a community garden;"
             ]
           },
           {

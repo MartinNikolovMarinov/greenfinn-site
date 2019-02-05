@@ -2,16 +2,21 @@
   {
     "positionTitle": "Full Stack Developer and UI Engineer",
     "positionId": "fullStackDeveloper",
-    "description": "We are hiring software roboticists who want to do applied robotics, now. We build software to do real work"
+    "description": "We’re looking for a Full Stack Developer and UI Engineer to develop the user experience and backend design of the next generation of robotics"
   },
   {
     "positionTitle": "Business Development Associate",
     "positionId": "businessDevelopmentAssociate",
-    "description": "We are hiring software roboticists who want to do applied robotics, now. We build software to do real work"
+    "description": "We’re looking for a Business Development Associate to work closely with the CEO on all business development aspects of Greenfinn Technologies."
   },
   {
     "positionTitle": "Mechanical Product Design Engineer",
     "positionId": "mechanicalProductDesignEngineer",
-    "description": "We are hiring software roboticists who want to do applied robotics, now. We build software to do real work"
+    "description": "We’re looking for a Mechanical Design Engineer to undertake applied robotics and help us to design advanced technologies"
+  },
+  {
+    "positionTitle": "Machine Learning Researchers",
+    "positionId": "machineLearningResearchers",
+    "description": "We’re are seeking Machine Learning Researchers that are interested in building perception and adaptive control systems that improve the performance, reliability, and generalizability of robot behaviors."
   }
 ]

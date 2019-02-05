@@ -5,9 +5,11 @@ import listedPositions from '../data/listed-positions.json';
 import companyInfo from '../data/company-info.json';
 import '../styles/talents-wanted.css';
 
+const MAX_WORD_COUNT_IN_SLIDE = 120;
+
 function TalentsItem({ positionTitle, description, style, openModal, positionId }) {
-  if (description.length > 100) {
-    description = description.substring(0, 100) + '...';
+  if (description.length > MAX_WORD_COUNT_IN_SLIDE) {
+    description = description.substring(0, MAX_WORD_COUNT_IN_SLIDE) + '...';
   }
 
   return (
